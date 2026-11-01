@@ -1,0 +1,42 @@
+{
+  "episodes": 100,
+  "n_demos": [
+    {
+      "full_success_rate": 0.75,
+      "cube_success_rate": 0.8133333333333334,
+      "demos": 10
+    },
+    {
+      "full_success_rate": 0.9,
+      "cube_success_rate": 0.96,
+      "demos": 25
+    },
+    {
+      "full_success_rate": 0.96,
+      "cube_success_rate": 0.97,
+      "demos": 50
+    },
+    {
+      "full_success_rate": 1.0,
+      "cube_success_rate": 1.0,
+      "demos": 100
+    },
+    {
+      "full_success_rate": 0.99,
+      "cube_success_rate": 0.9966666666666667,
+      "demos": 400
+    }
+  ],
+  "noise": [
+    {
+      "full_success_rate": 0.99,
+      "cube_success_rate": 0.9966666666666667,
+      "label": "ノイズなしのデモ 400 本"
+    },
+    {
+      "label": "ノイズありのデモ 400 本（本番）",
+      "full_success_rate": 0.99,
+      "cube_success_rate": 0.9966666666666667
+    }
+  ]
+}

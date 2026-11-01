@@ -1,0 +1,9 @@
+50/300 episodes, 6652 frames, 84s
+100/300 episodes, 13332 frames, 169s
+150/300 episodes, 19859 frames, 380s
+200/300 episodes, 25578 frames, 513s
+250/300 episodes, 32557 frames, 674s
+300/300 episodes, 39588 frames, 762s
+saved 39588 frames
+50/60 episodes, 6644 frames, 86s
+saved 8132 frames

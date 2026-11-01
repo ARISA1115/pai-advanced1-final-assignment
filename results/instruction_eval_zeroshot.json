@@ -1,0 +1,1088 @@
+{
+ "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+ "few_shot": false,
+ "n": 62,
+ "seconds": 164,
+ "rows": [
+  {
+   "id": 1,
+   "category": "single",
+   "text": "赤いキューブを青の置き場所に置いて",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 2,
+   "category": "single",
+   "text": "緑のキューブを赤の場所へ運んで",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 3,
+   "category": "single",
+   "text": "青を緑の置き場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 4,
+   "category": "single",
+   "text": "赤を緑のところに移して",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 5,
+   "category": "single",
+   "text": "青いブロックを赤い台に載せて",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 6,
+   "category": "single",
+   "text": "緑のやつを青のとこへ",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 7,
+   "category": "single",
+   "text": "赤だけ青の置き場所へ動かして。他は触らないで",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 8,
+   "category": "single",
+   "text": "Move the red cube to the green pad.",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 9,
+   "category": "single",
+   "text": "青のキューブを青の置き場所に置いて",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 10,
+   "category": "single",
+   "text": "緑を緑の置き場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 11,
+   "category": "single",
+   "text": "赤を赤の場所へ戻して",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 12,
+   "category": "single",
+   "text": "まず赤を青の置き場所へお願い",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 13,
+   "category": "swap",
+   "text": "赤と青を入れ替えて",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "blue",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"blue\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 14,
+   "category": "swap",
+   "text": "赤と緑の位置を交換して",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "green"
+     },
+     {
+      "cube": "green",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"green\"},{\"cube\":\"green\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 15,
+   "category": "swap",
+   "text": "緑と青を入れ替えてください",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "blue"
+     },
+     {
+      "cube": "blue",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"blue\"},{\"cube\":\"blue\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 16,
+   "category": "swap",
+   "text": "青と赤をスワップ",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "blue",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"blue\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 17,
+   "category": "swap",
+   "text": "赤のキューブと緑のキューブの置き場所を入れ替える",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "green"
+     },
+     {
+      "cube": "green",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"green\"},{\"cube\":\"green\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 18,
+   "category": "swap",
+   "text": "swap the green and blue cubes",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "blue"
+     },
+     {
+      "cube": "blue",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"blue\"},{\"cube\":\"blue\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 19,
+   "category": "swap",
+   "text": "赤と青を入れ替えて、緑は動かさないで",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "blue",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"blue\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 20,
+   "category": "swap",
+   "text": "緑と赤をお互いの場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "red"
+     },
+     {
+      "cube": "red",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"red\"},{\"cube\":\"red\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 21,
+   "category": "multi",
+   "text": "赤を青の置き場所へ、緑を赤の置き場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "green",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"green\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 22,
+   "category": "multi",
+   "text": "青を赤へ、赤を緑へ、緑を青へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "red"
+     },
+     {
+      "cube": "red",
+      "to": "green"
+     },
+     {
+      "cube": "green",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"red\"},{\"cube\":\"red\",\"to\":\"green\"},{\"cube\":\"green\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 23,
+   "category": "multi",
+   "text": "赤を緑の場所へ、青を赤の場所へ運んで",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 24,
+   "category": "multi",
+   "text": "緑は青の置き場所、青は緑の置き場所",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "blue"
+     },
+     {
+      "cube": "blue",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"blue\"},{\"cube\":\"blue\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 25,
+   "category": "multi",
+   "text": "全部ひとつずつずらして：赤は緑、緑は青、青は赤",
+   "output": {
+    "error": "入れ替えは2つのキューブが互いの色の置き場所へ行くことです。"
+   },
+   "raw": "{\"error\":\"入れ替えは2つのキューブが互いの色の置き場所へ行くことです。\"}",
+   "correct": false
+  },
+  {
+   "id": 26,
+   "category": "multi",
+   "text": "赤→青、緑→赤 の順に置いて",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "green",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"green\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 27,
+   "category": "multi",
+   "text": "青を緑へ、緑を赤へ運んで。赤は触らない",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "green"
+     },
+     {
+      "cube": "green",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"green\"},{\"cube\":\"green\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 28,
+   "category": "multi",
+   "text": "Put red on the blue pad and blue on the green pad.",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "blue",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"blue\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 29,
+   "category": "multi",
+   "text": "赤を青の置き場所に、それから緑を赤の置き場所に",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "green",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"green\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 30,
+   "category": "multi",
+   "text": "3つとも隣の色の場所に回して（赤→緑→青→赤）",
+   "output": {
+    "error": "入れ替えは2つのキューブが互いの色の置き場所へ行くことです。"
+   },
+   "raw": "{\"error\":\"入れ替えは2つのキューブが互いの色の置き場所へ行くことです。\"}",
+   "correct": false
+  },
+  {
+   "id": 31,
+   "category": "multi",
+   "text": "赤は青へ、青は赤へ、緑はそのままで",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "blue",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"blue\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 32,
+   "category": "multi",
+   "text": "緑と青を、それぞれ赤と緑の置き場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"}]}",
+   "correct": false
+  },
+  {
+   "id": 33,
+   "category": "sort",
+   "text": "色ごとに仕分けて",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 34,
+   "category": "sort",
+   "text": "全部同じ色の置き場所に置いて",
+   "output": {
+    "error": "存在しない色・場所・動作の指示"
+   },
+   "raw": "{\"error\":\"存在しない色・場所・動作の指示\"}",
+   "correct": false
+  },
+  {
+   "id": 35,
+   "category": "sort",
+   "text": "キューブを色別に片付けて",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 36,
+   "category": "sort",
+   "text": "Sort the cubes by color.",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 37,
+   "category": "sort",
+   "text": "それぞれのキューブを同じ色の置き場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 38,
+   "category": "sort",
+   "text": "色を揃えて並べて",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 39,
+   "category": "sort",
+   "text": "全て元の色の置き場所に戻して",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 40,
+   "category": "sort",
+   "text": "色ごとに分けてください",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 41,
+   "category": "exclude",
+   "text": "緑以外を色ごとの置き場所に置いて",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 42,
+   "category": "exclude",
+   "text": "赤以外は同じ色の場所に",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "green"
+     },
+     {
+      "cube": "blue",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"green\"},{\"cube\":\"blue\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 43,
+   "category": "exclude",
+   "text": "青以外をそれぞれ同じ色の置き場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 44,
+   "category": "exclude",
+   "text": "赤と緑だけ色ごとに仕分けて",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"},{\"cube\":\"green\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 45,
+   "category": "exclude",
+   "text": "青と緑を色別に",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "blue"
+     },
+     {
+      "cube": "green",
+      "to": "green"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"blue\"},{\"cube\":\"green\",\"to\":\"green\"}]}",
+   "correct": true
+  },
+  {
+   "id": 46,
+   "category": "exclude",
+   "text": "赤だけ色の通りに",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 47,
+   "category": "casual",
+   "text": "赤いのを青いほうに持っていって",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 48,
+   "category": "casual",
+   "text": "ちょっと緑のキューブを赤の場所に動かしてくれる？",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 49,
+   "category": "casual",
+   "text": "青を赤のところへ。お願いします。",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 50,
+   "category": "casual",
+   "text": "赤、青のとこね",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 51,
+   "category": "casual",
+   "text": "緑 → 青",
+   "output": {
+    "moves": [
+     {
+      "cube": "green",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"green\",\"to\":\"blue\"}]}",
+   "correct": true
+  },
+  {
+   "id": 52,
+   "category": "casual",
+   "text": "Please place the blue cube on the red pad.",
+   "output": {
+    "moves": [
+     {
+      "cube": "blue",
+      "to": "red"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"blue\",\"to\":\"red\"}]}",
+   "correct": true
+  },
+  {
+   "id": 53,
+   "category": "invalid",
+   "text": "赤と緑を両方とも青の置き場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "green",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"green\",\"to\":\"blue\"}]}",
+   "correct": false,
+   "safe": true
+  },
+  {
+   "id": 54,
+   "category": "invalid",
+   "text": "黄色のキューブを赤の場所へ",
+   "output": {
+    "error": "黄色のキューブは存在しないです。"
+   },
+   "raw": "{\"error\":\"黄色のキューブは存在しないです。\"}",
+   "correct": true,
+   "safe": true
+  },
+  {
+   "id": 55,
+   "category": "invalid",
+   "text": "赤を白い置き場所へ",
+   "output": {
+    "error": "白い置き場所は存在しません。"
+   },
+   "raw": "{\"error\":\"白い置き場所は存在しません。\"}",
+   "correct": true,
+   "safe": true
+  },
+  {
+   "id": 56,
+   "category": "invalid",
+   "text": "キューブを全部ゴミ箱に捨てて",
+   "output": {
+    "error": "存在しない色・場所・動作の指示"
+   },
+   "raw": "{\"error\":\"存在しない色・場所・動作の指示\"}",
+   "correct": true,
+   "safe": true
+  },
+  {
+   "id": 57,
+   "category": "invalid",
+   "text": "赤を青の置き場所へ、緑も青の置き場所へ",
+   "output": {
+    "moves": [
+     {
+      "cube": "red",
+      "to": "blue"
+     },
+     {
+      "cube": "green",
+      "to": "blue"
+     }
+    ]
+   },
+   "raw": "{\"moves\":[{\"cube\":\"red\",\"to\":\"blue\"},{\"cube\":\"green\",\"to\":\"blue\"}]}",
+   "correct": false,
+   "safe": true
+  },
+  {
+   "id": 58,
+   "category": "invalid",
+   "text": "こんにちは",
+   "output": {
+    "error": "無効な指示"
+   },
+   "raw": "{\"error\":\"無効な指示\"}",
+   "correct": true,
+   "safe": true
+  },
+  {
+   "id": 59,
+   "category": "invalid",
+   "text": "赤を青にも緑にも置いて",
+   "output": {
+    "error": "存在しない色・場所・動作の指示"
+   },
+   "raw": "{\"error\":\"存在しない色・場所・動作の指示\"}",
+   "correct": true,
+   "safe": true
+  },
+  {
+   "id": 60,
+   "category": "invalid",
+   "text": "青のキューブをテーブルの外に出して",
+   "output": {
+    "error": "存在しない色・場所・動作の指示"
+   },
+   "raw": "{\"error\":\"存在しない色・場所・動作の指示\"}",
+   "correct": true,
+   "safe": true
+  },
+  {
+   "id": 61,
+   "category": "invalid",
+   "text": "赤を宙に浮かせて",
+   "output": {
+    "error": "存在しない色・場所・動作の指示"
+   },
+   "raw": "{\"error\":\"存在しない色・場所・動作の指示\"}",
+   "correct": true,
+   "safe": true
+  },
+  {
+   "id": 62,
+   "category": "invalid",
+   "text": "3 つとも赤の置き場所へ",
+   "output": {
+    "error": "存在しない色・場所"
+   },
+   "raw": "{\"error\":\"存在しない色・場所\"}",
+   "correct": true,
+   "safe": true
+  }
+ ],
+ "accuracy": 0.9032258064516129,
+ "by_category": {
+  "single": {
+   "correct": 12,
+   "n": 12
+  },
+  "swap": {
+   "correct": 8,
+   "n": 8
+  },
+  "multi": {
+   "correct": 9,
+   "n": 12
+  },
+  "sort": {
+   "correct": 7,
+   "n": 8
+  },
+  "exclude": {
+   "correct": 6,
+   "n": 6
+  },
+  "casual": {
+   "correct": 6,
+   "n": 6
+  },
+  "invalid": {
+   "correct": 8,
+   "n": 10
+  }
+ },
+ "valid_instructions_accuracy": 0.9230769230769231,
+ "invalid_refused_llm_only": 0.8,
+ "invalid_refused_with_validation": 1.0,
+ "invalid_executed_wrongly": []
+}

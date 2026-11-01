@@ -1,0 +1,513 @@
+{
+ "policy": "checkpoints/policy_random.pt",
+ "seeds_per_instruction": 5,
+ "e2e_success_overall": 0.9516129032258065,
+ "parse_accuracy": 0.9193548387096774,
+ "by_category": {
+  "single": 1.0,
+  "swap": 1.0,
+  "multi": 0.9166666666666666,
+  "sort": 1.0,
+  "exclude": 1.0,
+  "casual": 0.6666666666666666,
+  "invalid": 1.0
+ },
+ "rows": [
+  {
+   "id": 1,
+   "category": "single",
+   "text": "赤いキューブを青の置き場所に置いて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 2,
+   "category": "single",
+   "text": "緑のキューブを赤の場所へ運んで",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 3,
+   "category": "single",
+   "text": "青を緑の置き場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 4,
+   "category": "single",
+   "text": "赤を緑のところに移して",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 5,
+   "category": "single",
+   "text": "青いブロックを赤い台に載せて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 6,
+   "category": "single",
+   "text": "緑のやつを青のとこへ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 7,
+   "category": "single",
+   "text": "赤だけ青の置き場所へ動かして。他は触らないで",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 8,
+   "category": "single",
+   "text": "Move the red cube to the green pad.",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 9,
+   "category": "single",
+   "text": "青のキューブを青の置き場所に置いて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 10,
+   "category": "single",
+   "text": "緑を緑の置き場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 11,
+   "category": "single",
+   "text": "赤を赤の場所へ戻して",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 12,
+   "category": "single",
+   "text": "まず赤を青の置き場所へお願い",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 13,
+   "category": "swap",
+   "text": "赤と青を入れ替えて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 14,
+   "category": "swap",
+   "text": "赤と緑の位置を交換して",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 15,
+   "category": "swap",
+   "text": "緑と青を入れ替えてください",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 16,
+   "category": "swap",
+   "text": "青と赤をスワップ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 17,
+   "category": "swap",
+   "text": "赤のキューブと緑のキューブの置き場所を入れ替える",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 18,
+   "category": "swap",
+   "text": "swap the green and blue cubes",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 19,
+   "category": "swap",
+   "text": "赤と青を入れ替えて、緑は動かさないで",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 20,
+   "category": "swap",
+   "text": "緑と赤をお互いの場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 21,
+   "category": "multi",
+   "text": "赤を青の置き場所へ、緑を赤の置き場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 22,
+   "category": "multi",
+   "text": "青を赤へ、赤を緑へ、緑を青へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 23,
+   "category": "multi",
+   "text": "赤を緑の場所へ、青を赤の場所へ運んで",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 24,
+   "category": "multi",
+   "text": "緑は青の置き場所、青は緑の置き場所",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 25,
+   "category": "multi",
+   "text": "全部ひとつずつずらして：赤は緑、緑は青、青は赤",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 26,
+   "category": "multi",
+   "text": "赤→青、緑→赤 の順に置いて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 27,
+   "category": "multi",
+   "text": "青を緑へ、緑を赤へ運んで。赤は触らない",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 28,
+   "category": "multi",
+   "text": "Put red on the blue pad and blue on the green pad.",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 29,
+   "category": "multi",
+   "text": "赤を青の置き場所に、それから緑を赤の置き場所に",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 30,
+   "category": "multi",
+   "text": "3つとも隣の色の場所に回して（赤→緑→青→赤）",
+   "parse_correct": false,
+   "e2e_success": 0.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 31,
+   "category": "multi",
+   "text": "赤は青へ、青は赤へ、緑はそのままで",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 32,
+   "category": "multi",
+   "text": "緑と青を、それぞれ赤と緑の置き場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 33,
+   "category": "sort",
+   "text": "色ごとに仕分けて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 34,
+   "category": "sort",
+   "text": "全部同じ色の置き場所に置いて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 35,
+   "category": "sort",
+   "text": "キューブを色別に片付けて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 36,
+   "category": "sort",
+   "text": "Sort the cubes by color.",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 37,
+   "category": "sort",
+   "text": "それぞれのキューブを同じ色の置き場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 38,
+   "category": "sort",
+   "text": "色を揃えて並べて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 39,
+   "category": "sort",
+   "text": "全て元の色の置き場所に戻して",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 40,
+   "category": "sort",
+   "text": "色ごとに分けてください",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 41,
+   "category": "exclude",
+   "text": "緑以外を色ごとの置き場所に置いて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 42,
+   "category": "exclude",
+   "text": "赤以外は同じ色の場所に",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 43,
+   "category": "exclude",
+   "text": "青以外をそれぞれ同じ色の置き場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 44,
+   "category": "exclude",
+   "text": "赤と緑だけ色ごとに仕分けて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 45,
+   "category": "exclude",
+   "text": "青と緑を色別に",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 46,
+   "category": "exclude",
+   "text": "赤だけ色の通りに",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 47,
+   "category": "casual",
+   "text": "赤いのを青いほうに持っていって",
+   "parse_correct": false,
+   "e2e_success": 0.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 48,
+   "category": "casual",
+   "text": "ちょっと緑のキューブを赤の場所に動かしてくれる？",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 49,
+   "category": "casual",
+   "text": "青を赤のところへ。お願いします。",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 50,
+   "category": "casual",
+   "text": "赤、青のとこね",
+   "parse_correct": false,
+   "e2e_success": 0.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 51,
+   "category": "casual",
+   "text": "緑 → 青",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 52,
+   "category": "casual",
+   "text": "Please place the blue cube on the red pad.",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 5
+  },
+  {
+   "id": 53,
+   "category": "invalid",
+   "text": "赤と緑を両方とも青の置き場所へ",
+   "parse_correct": false,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 54,
+   "category": "invalid",
+   "text": "黄色のキューブを赤の場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 55,
+   "category": "invalid",
+   "text": "赤を白い置き場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 56,
+   "category": "invalid",
+   "text": "キューブを全部ゴミ箱に捨てて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 57,
+   "category": "invalid",
+   "text": "赤を青の置き場所へ、緑も青の置き場所へ",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 58,
+   "category": "invalid",
+   "text": "こんにちは",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 59,
+   "category": "invalid",
+   "text": "赤を青にも緑にも置いて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 60,
+   "category": "invalid",
+   "text": "青のキューブをテーブルの外に出して",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 61,
+   "category": "invalid",
+   "text": "赤を宙に浮かせて",
+   "parse_correct": true,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  },
+  {
+   "id": 62,
+   "category": "invalid",
+   "text": "3 つとも赤の置き場所へ",
+   "parse_correct": false,
+   "e2e_success": 1.0,
+   "executed_episodes": 0
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+50/600 episodes, 14556 samples, 13s
+100/600 episodes, 27664 samples, 26s
+150/600 episodes, 40353 samples, 41s
+200/600 episodes, 53738 samples, 55s
+250/600 episodes, 65813 samples, 69s
+300/600 episodes, 78502 samples, 84s
+350/600 episodes, 91406 samples, 97s
+400/600 episodes, 104657 samples, 109s
+450/600 episodes, 119505 samples, 123s
+500/600 episodes, 131390 samples, 135s
+550/600 episodes, 144260 samples, 149s
+600/600 episodes, 158066 samples, 164s
+saved 158066 samples from 600 episodes (tried 690); demo success rate 0.870
+samples train=141123 val=16943
+epoch   1 train 0.11611 val 0.09596 (0s)
+epoch  10 train 0.03021 val 0.03135 (3s)
+epoch  20 train 0.02124 val 0.02282 (6s)
+epoch  30 train 0.01735 val 0.01861 (9s)
+epoch  40 train 0.01456 val 0.01724 (12s)
+epoch  50 train 0.01257 val 0.01424 (14s)
+epoch  60 train 0.01084 val 0.01309 (17s)
+epoch  70 train 0.00955 val 0.01240 (20s)
+epoch  80 train 0.00852 val 0.01096 (23s)
+epoch  90 train 0.00795 val 0.01067 (26s)
+epoch 100 train 0.00772 val 0.01054 (29s)
+saved checkpoints/policy_random_bc.pt
+BC val 0.99
+iter 1: rollout success 0.990, 59709 labeled samples (52s)
+iter 1: val full 1.000
+iter 2: rollout success 0.997, 56772 labeled samples (48s)
+iter 2: val full 1.000
+selected policy_random_dagger1.pt
+BC（DAgger なし） test 0.995 0.777
+DAgger 1 回 test 0.999 0.779
+DAgger 2 回 test 0.998 0.7786666666666666

@@ -1,0 +1,71 @@
+{
+  "candidates": [
+    {
+      "name": "BC（DAgger なし）",
+      "ckpt": "policy_random_bc.pt",
+      "val_full": 0.99,
+      "val_cube": 0.76,
+      "test_full": 0.995,
+      "test_cube": 0.9970059880239521,
+      "test_failed": [
+        {
+          "seed": 10233,
+          "placed": 2
+        },
+        {
+          "seed": 10279,
+          "placed": 1
+        },
+        {
+          "seed": 10643,
+          "placed": 2
+        },
+        {
+          "seed": 10709,
+          "placed": 2
+        },
+        {
+          "seed": 10885,
+          "placed": 1
+        }
+      ]
+    },
+    {
+      "name": "DAgger 1 回",
+      "ckpt": "policy_random_dagger1.pt",
+      "rollout_success": 0.99,
+      "labeled_samples": 59709,
+      "val_full": 1.0,
+      "val_cube": 0.7633333333333333,
+      "test_full": 0.999,
+      "test_cube": 0.9995722840034217,
+      "test_failed": [
+        {
+          "seed": 10104,
+          "placed": 2
+        }
+      ]
+    },
+    {
+      "name": "DAgger 2 回",
+      "ckpt": "policy_random_dagger2.pt",
+      "rollout_success": 0.9966666666666667,
+      "labeled_samples": 56772,
+      "val_full": 1.0,
+      "val_cube": 0.7633333333333333,
+      "test_full": 0.998,
+      "test_cube": 0.9991445680068435,
+      "test_failed": [
+        {
+          "seed": 10047,
+          "placed": 2
+        },
+        {
+          "seed": 10591,
+          "placed": 2
+        }
+      ]
+    }
+  ],
+  "selected": "policy_random_dagger1.pt"
+}

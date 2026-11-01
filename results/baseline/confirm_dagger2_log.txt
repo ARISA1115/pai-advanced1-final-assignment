@@ -1,0 +1,1 @@
+{'mode': 'bc', 'episodes': 1000, 'full_success_rate': 0.998, 'cube_success_rate': 0.9993333333333333, 'mean_steps_success': 253.87174348697394, 'failed': [{'seed': 40011, 'placed': 2}, {'seed': 40086, 'placed': 2}]} (215s)

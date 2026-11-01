@@ -1,0 +1,9 @@
+BC val 0.97
+iter 1: rollout success 0.955, 56312 labeled samples (46s)
+iter 1: val full 0.990
+iter 2: rollout success 0.995, 50579 labeled samples (42s)
+iter 2: val full 1.000
+selected policy_dagger2.pt
+BC（DAgger なし） test 0.9766666666666667 0.99
+DAgger 1 回 test 0.9966666666666667 0.9988888888888889
+DAgger 2 回 test 0.9966666666666667 0.9988888888888889

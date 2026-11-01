@@ -1,0 +1,7 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 4486.95it/s]
+accuracy 0.919 (57/62) {'single': {'correct': 12, 'n': 12}, 'swap': {'correct': 8, 'n': 8}, 'multi': {'correct': 11, 'n': 12}, 'sort': {'correct': 8, 'n': 8}, 'exclude': {'correct': 6, 'n': 6}, 'casual': {'correct': 4, 'n': 6}, 'invalid': {'correct': 8, 'n': 10}}
+  誤り: 30 3つとも隣の色の場所に回して（赤→緑→青→赤） -> {'error': "出力が JSON でない: JSON が壊れている: Expecting ',' delimiter: line 1 column 80 (char 79)"}
+  誤り: 47 赤いのを青いほうに持っていって -> {'error': '赤のキューブがない'}
+  誤り: 50 赤、青のとこね -> {'moves': [{'cube': 'red', 'to': 'blue'}, {'cube': 'blue', 'to': 'red'}]}
+  誤り: 53 赤と緑を両方とも青の置き場所へ -> {'moves': [{'cube': 'red', 'to': 'green'}, {'cube': 'green', 'to': 'green'}]}
+  誤り: 62 3 つとも赤の置き場所へ -> {'moves': [{'cube': 'red', 'to': 'red'}, {'cube': 'green', 'to': 'red'}, {'cube': 'blue', 'to': 'red'}]}

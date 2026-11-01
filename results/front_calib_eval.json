@@ -1,0 +1,9 @@
+{
+ "frames": 400,
+ "cubes": 1200,
+ "not_found": 0,
+ "median_mm_before": 9.21105281862804,
+ "median_mm_after": 0.7236548948070711,
+ "p95_mm_after": 1.8375532535306789,
+ "max_mm_after": 3.425611878077857
+}

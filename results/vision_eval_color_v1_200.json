@@ -1,0 +1,403 @@
+{
+ "episodes": 200,
+ "state_success": 0.995,
+ "state_cube_success": 0.9980588235294118,
+ "state_failed": [
+  {
+   "seed": 10104,
+   "placed": 2,
+   "active": 3
+  }
+ ],
+ "vision_success": 0.625,
+ "vision_cube_success": 0.768827571937866,
+ "vision_failed": [
+  {
+   "seed": 10024,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 10048,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10084,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10090,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10150,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10156,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10168,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10174,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 10180,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10186,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 10031,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10043,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10055,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10091,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10097,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 10139,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10151,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10157,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10175,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 10014,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10032,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10044,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10050,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10068,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10074,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 10080,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 10092,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10104,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10110,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10128,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10152,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10170,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10176,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10182,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10188,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10015,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10027,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 10039,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10045,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10081,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10087,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 10105,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 10111,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10117,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10129,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 10135,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10147,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 10153,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10159,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10177,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10183,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 10195,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10022,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10046,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10052,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10100,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10160,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10172,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10178,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10184,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10023,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10029,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10035,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 10041,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10047,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10065,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 10077,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10083,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 10095,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10101,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10107,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10113,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10137,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10155,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 10173,
+   "placed": 0,
+   "active": 1
+  }
+ ],
+ "median_mm_xy": 1.9971061097378284,
+ "median_mm": [
+  2.280534907518894,
+  1.7136773119567628,
+  0.2468388838815505
+ ],
+ "p95_mm": [
+  31.750360729191456,
+  32.89396109262782,
+  166.8770782754816
+ ],
+ "note": "推定誤差は、閉ループ中の全フレーム（アームが隠す場面を含む）での、キューブ 3 個分の絶対誤差"
+}

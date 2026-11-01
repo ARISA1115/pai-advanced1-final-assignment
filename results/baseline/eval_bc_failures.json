@@ -1,0 +1,39 @@
+[
+  {
+    "mode": "bc",
+    "episodes": 300,
+    "full_success_rate": 0.9766666666666667,
+    "cube_success_rate": 0.99,
+    "mean_steps_success": 256.6518771331058,
+    "failed": [
+      {
+        "seed": 10007,
+        "placed": 2
+      },
+      {
+        "seed": 10132,
+        "placed": 2
+      },
+      {
+        "seed": 10183,
+        "placed": 2
+      },
+      {
+        "seed": 10198,
+        "placed": 2
+      },
+      {
+        "seed": 10231,
+        "placed": 1
+      },
+      {
+        "seed": 10233,
+        "placed": 1
+      },
+      {
+        "seed": 10255,
+        "placed": 2
+      }
+    ]
+  }
+]

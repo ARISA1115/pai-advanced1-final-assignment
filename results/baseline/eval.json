@@ -1,0 +1,1232 @@
+[
+  {
+    "mode": "expert",
+    "episodes": 300,
+    "full_success_rate": 1.0,
+    "cube_success_rate": 1.0,
+    "mean_steps_success": 255.86333333333334,
+    "failed": []
+  },
+  {
+    "mode": "bc",
+    "episodes": 300,
+    "full_success_rate": 0.9966666666666667,
+    "cube_success_rate": 0.9988888888888889,
+    "mean_steps_success": 255.96989966555185,
+    "failed": [
+      {
+        "seed": 10116,
+        "placed": 2
+      }
+    ]
+  },
+  {
+    "mode": "null",
+    "episodes": 300,
+    "full_success_rate": 0.0,
+    "cube_success_rate": 0.0,
+    "mean_steps_success": null,
+    "failed": [
+      {
+        "seed": 10000,
+        "placed": 0
+      },
+      {
+        "seed": 10001,
+        "placed": 0
+      },
+      {
+        "seed": 10002,
+        "placed": 0
+      },
+      {
+        "seed": 10003,
+        "placed": 0
+      },
+      {
+        "seed": 10004,
+        "placed": 0
+      },
+      {
+        "seed": 10005,
+        "placed": 0
+      },
+      {
+        "seed": 10006,
+        "placed": 0
+      },
+      {
+        "seed": 10007,
+        "placed": 0
+      },
+      {
+        "seed": 10008,
+        "placed": 0
+      },
+      {
+        "seed": 10009,
+        "placed": 0
+      },
+      {
+        "seed": 10010,
+        "placed": 0
+      },
+      {
+        "seed": 10011,
+        "placed": 0
+      },
+      {
+        "seed": 10012,
+        "placed": 0
+      },
+      {
+        "seed": 10013,
+        "placed": 0
+      },
+      {
+        "seed": 10014,
+        "placed": 0
+      },
+      {
+        "seed": 10015,
+        "placed": 0
+      },
+      {
+        "seed": 10016,
+        "placed": 0
+      },
+      {
+        "seed": 10017,
+        "placed": 0
+      },
+      {
+        "seed": 10018,
+        "placed": 0
+      },
+      {
+        "seed": 10019,
+        "placed": 0
+      },
+      {
+        "seed": 10020,
+        "placed": 0
+      },
+      {
+        "seed": 10021,
+        "placed": 0
+      },
+      {
+        "seed": 10022,
+        "placed": 0
+      },
+      {
+        "seed": 10023,
+        "placed": 0
+      },
+      {
+        "seed": 10024,
+        "placed": 0
+      },
+      {
+        "seed": 10025,
+        "placed": 0
+      },
+      {
+        "seed": 10026,
+        "placed": 0
+      },
+      {
+        "seed": 10027,
+        "placed": 0
+      },
+      {
+        "seed": 10028,
+        "placed": 0
+      },
+      {
+        "seed": 10029,
+        "placed": 0
+      },
+      {
+        "seed": 10030,
+        "placed": 0
+      },
+      {
+        "seed": 10031,
+        "placed": 0
+      },
+      {
+        "seed": 10032,
+        "placed": 0
+      },
+      {
+        "seed": 10033,
+        "placed": 0
+      },
+      {
+        "seed": 10034,
+        "placed": 0
+      },
+      {
+        "seed": 10035,
+        "placed": 0
+      },
+      {
+        "seed": 10036,
+        "placed": 0
+      },
+      {
+        "seed": 10037,
+        "placed": 0
+      },
+      {
+        "seed": 10038,
+        "placed": 0
+      },
+      {
+        "seed": 10039,
+        "placed": 0
+      },
+      {
+        "seed": 10040,
+        "placed": 0
+      },
+      {
+        "seed": 10041,
+        "placed": 0
+      },
+      {
+        "seed": 10042,
+        "placed": 0
+      },
+      {
+        "seed": 10043,
+        "placed": 0
+      },
+      {
+        "seed": 10044,
+        "placed": 0
+      },
+      {
+        "seed": 10045,
+        "placed": 0
+      },
+      {
+        "seed": 10046,
+        "placed": 0
+      },
+      {
+        "seed": 10047,
+        "placed": 0
+      },
+      {
+        "seed": 10048,
+        "placed": 0
+      },
+      {
+        "seed": 10049,
+        "placed": 0
+      },
+      {
+        "seed": 10050,
+        "placed": 0
+      },
+      {
+        "seed": 10051,
+        "placed": 0
+      },
+      {
+        "seed": 10052,
+        "placed": 0
+      },
+      {
+        "seed": 10053,
+        "placed": 0
+      },
+      {
+        "seed": 10054,
+        "placed": 0
+      },
+      {
+        "seed": 10055,
+        "placed": 0
+      },
+      {
+        "seed": 10056,
+        "placed": 0
+      },
+      {
+        "seed": 10057,
+        "placed": 0
+      },
+      {
+        "seed": 10058,
+        "placed": 0
+      },
+      {
+        "seed": 10059,
+        "placed": 0
+      },
+      {
+        "seed": 10060,
+        "placed": 0
+      },
+      {
+        "seed": 10061,
+        "placed": 0
+      },
+      {
+        "seed": 10062,
+        "placed": 0
+      },
+      {
+        "seed": 10063,
+        "placed": 0
+      },
+      {
+        "seed": 10064,
+        "placed": 0
+      },
+      {
+        "seed": 10065,
+        "placed": 0
+      },
+      {
+        "seed": 10066,
+        "placed": 0
+      },
+      {
+        "seed": 10067,
+        "placed": 0
+      },
+      {
+        "seed": 10068,
+        "placed": 0
+      },
+      {
+        "seed": 10069,
+        "placed": 0
+      },
+      {
+        "seed": 10070,
+        "placed": 0
+      },
+      {
+        "seed": 10071,
+        "placed": 0
+      },
+      {
+        "seed": 10072,
+        "placed": 0
+      },
+      {
+        "seed": 10073,
+        "placed": 0
+      },
+      {
+        "seed": 10074,
+        "placed": 0
+      },
+      {
+        "seed": 10075,
+        "placed": 0
+      },
+      {
+        "seed": 10076,
+        "placed": 0
+      },
+      {
+        "seed": 10077,
+        "placed": 0
+      },
+      {
+        "seed": 10078,
+        "placed": 0
+      },
+      {
+        "seed": 10079,
+        "placed": 0
+      },
+      {
+        "seed": 10080,
+        "placed": 0
+      },
+      {
+        "seed": 10081,
+        "placed": 0
+      },
+      {
+        "seed": 10082,
+        "placed": 0
+      },
+      {
+        "seed": 10083,
+        "placed": 0
+      },
+      {
+        "seed": 10084,
+        "placed": 0
+      },
+      {
+        "seed": 10085,
+        "placed": 0
+      },
+      {
+        "seed": 10086,
+        "placed": 0
+      },
+      {
+        "seed": 10087,
+        "placed": 0
+      },
+      {
+        "seed": 10088,
+        "placed": 0
+      },
+      {
+        "seed": 10089,
+        "placed": 0
+      },
+      {
+        "seed": 10090,
+        "placed": 0
+      },
+      {
+        "seed": 10091,
+        "placed": 0
+      },
+      {
+        "seed": 10092,
+        "placed": 0
+      },
+      {
+        "seed": 10093,
+        "placed": 0
+      },
+      {
+        "seed": 10094,
+        "placed": 0
+      },
+      {
+        "seed": 10095,
+        "placed": 0
+      },
+      {
+        "seed": 10096,
+        "placed": 0
+      },
+      {
+        "seed": 10097,
+        "placed": 0
+      },
+      {
+        "seed": 10098,
+        "placed": 0
+      },
+      {
+        "seed": 10099,
+        "placed": 0
+      },
+      {
+        "seed": 10100,
+        "placed": 0
+      },
+      {
+        "seed": 10101,
+        "placed": 0
+      },
+      {
+        "seed": 10102,
+        "placed": 0
+      },
+      {
+        "seed": 10103,
+        "placed": 0
+      },
+      {
+        "seed": 10104,
+        "placed": 0
+      },
+      {
+        "seed": 10105,
+        "placed": 0
+      },
+      {
+        "seed": 10106,
+        "placed": 0
+      },
+      {
+        "seed": 10107,
+        "placed": 0
+      },
+      {
+        "seed": 10108,
+        "placed": 0
+      },
+      {
+        "seed": 10109,
+        "placed": 0
+      },
+      {
+        "seed": 10110,
+        "placed": 0
+      },
+      {
+        "seed": 10111,
+        "placed": 0
+      },
+      {
+        "seed": 10112,
+        "placed": 0
+      },
+      {
+        "seed": 10113,
+        "placed": 0
+      },
+      {
+        "seed": 10114,
+        "placed": 0
+      },
+      {
+        "seed": 10115,
+        "placed": 0
+      },
+      {
+        "seed": 10116,
+        "placed": 0
+      },
+      {
+        "seed": 10117,
+        "placed": 0
+      },
+      {
+        "seed": 10118,
+        "placed": 0
+      },
+      {
+        "seed": 10119,
+        "placed": 0
+      },
+      {
+        "seed": 10120,
+        "placed": 0
+      },
+      {
+        "seed": 10121,
+        "placed": 0
+      },
+      {
+        "seed": 10122,
+        "placed": 0
+      },
+      {
+        "seed": 10123,
+        "placed": 0
+      },
+      {
+        "seed": 10124,
+        "placed": 0
+      },
+      {
+        "seed": 10125,
+        "placed": 0
+      },
+      {
+        "seed": 10126,
+        "placed": 0
+      },
+      {
+        "seed": 10127,
+        "placed": 0
+      },
+      {
+        "seed": 10128,
+        "placed": 0
+      },
+      {
+        "seed": 10129,
+        "placed": 0
+      },
+      {
+        "seed": 10130,
+        "placed": 0
+      },
+      {
+        "seed": 10131,
+        "placed": 0
+      },
+      {
+        "seed": 10132,
+        "placed": 0
+      },
+      {
+        "seed": 10133,
+        "placed": 0
+      },
+      {
+        "seed": 10134,
+        "placed": 0
+      },
+      {
+        "seed": 10135,
+        "placed": 0
+      },
+      {
+        "seed": 10136,
+        "placed": 0
+      },
+      {
+        "seed": 10137,
+        "placed": 0
+      },
+      {
+        "seed": 10138,
+        "placed": 0
+      },
+      {
+        "seed": 10139,
+        "placed": 0
+      },
+      {
+        "seed": 10140,
+        "placed": 0
+      },
+      {
+        "seed": 10141,
+        "placed": 0
+      },
+      {
+        "seed": 10142,
+        "placed": 0
+      },
+      {
+        "seed": 10143,
+        "placed": 0
+      },
+      {
+        "seed": 10144,
+        "placed": 0
+      },
+      {
+        "seed": 10145,
+        "placed": 0
+      },
+      {
+        "seed": 10146,
+        "placed": 0
+      },
+      {
+        "seed": 10147,
+        "placed": 0
+      },
+      {
+        "seed": 10148,
+        "placed": 0
+      },
+      {
+        "seed": 10149,
+        "placed": 0
+      },
+      {
+        "seed": 10150,
+        "placed": 0
+      },
+      {
+        "seed": 10151,
+        "placed": 0
+      },
+      {
+        "seed": 10152,
+        "placed": 0
+      },
+      {
+        "seed": 10153,
+        "placed": 0
+      },
+      {
+        "seed": 10154,
+        "placed": 0
+      },
+      {
+        "seed": 10155,
+        "placed": 0
+      },
+      {
+        "seed": 10156,
+        "placed": 0
+      },
+      {
+        "seed": 10157,
+        "placed": 0
+      },
+      {
+        "seed": 10158,
+        "placed": 0
+      },
+      {
+        "seed": 10159,
+        "placed": 0
+      },
+      {
+        "seed": 10160,
+        "placed": 0
+      },
+      {
+        "seed": 10161,
+        "placed": 0
+      },
+      {
+        "seed": 10162,
+        "placed": 0
+      },
+      {
+        "seed": 10163,
+        "placed": 0
+      },
+      {
+        "seed": 10164,
+        "placed": 0
+      },
+      {
+        "seed": 10165,
+        "placed": 0
+      },
+      {
+        "seed": 10166,
+        "placed": 0
+      },
+      {
+        "seed": 10167,
+        "placed": 0
+      },
+      {
+        "seed": 10168,
+        "placed": 0
+      },
+      {
+        "seed": 10169,
+        "placed": 0
+      },
+      {
+        "seed": 10170,
+        "placed": 0
+      },
+      {
+        "seed": 10171,
+        "placed": 0
+      },
+      {
+        "seed": 10172,
+        "placed": 0
+      },
+      {
+        "seed": 10173,
+        "placed": 0
+      },
+      {
+        "seed": 10174,
+        "placed": 0
+      },
+      {
+        "seed": 10175,
+        "placed": 0
+      },
+      {
+        "seed": 10176,
+        "placed": 0
+      },
+      {
+        "seed": 10177,
+        "placed": 0
+      },
+      {
+        "seed": 10178,
+        "placed": 0
+      },
+      {
+        "seed": 10179,
+        "placed": 0
+      },
+      {
+        "seed": 10180,
+        "placed": 0
+      },
+      {
+        "seed": 10181,
+        "placed": 0
+      },
+      {
+        "seed": 10182,
+        "placed": 0
+      },
+      {
+        "seed": 10183,
+        "placed": 0
+      },
+      {
+        "seed": 10184,
+        "placed": 0
+      },
+      {
+        "seed": 10185,
+        "placed": 0
+      },
+      {
+        "seed": 10186,
+        "placed": 0
+      },
+      {
+        "seed": 10187,
+        "placed": 0
+      },
+      {
+        "seed": 10188,
+        "placed": 0
+      },
+      {
+        "seed": 10189,
+        "placed": 0
+      },
+      {
+        "seed": 10190,
+        "placed": 0
+      },
+      {
+        "seed": 10191,
+        "placed": 0
+      },
+      {
+        "seed": 10192,
+        "placed": 0
+      },
+      {
+        "seed": 10193,
+        "placed": 0
+      },
+      {
+        "seed": 10194,
+        "placed": 0
+      },
+      {
+        "seed": 10195,
+        "placed": 0
+      },
+      {
+        "seed": 10196,
+        "placed": 0
+      },
+      {
+        "seed": 10197,
+        "placed": 0
+      },
+      {
+        "seed": 10198,
+        "placed": 0
+      },
+      {
+        "seed": 10199,
+        "placed": 0
+      },
+      {
+        "seed": 10200,
+        "placed": 0
+      },
+      {
+        "seed": 10201,
+        "placed": 0
+      },
+      {
+        "seed": 10202,
+        "placed": 0
+      },
+      {
+        "seed": 10203,
+        "placed": 0
+      },
+      {
+        "seed": 10204,
+        "placed": 0
+      },
+      {
+        "seed": 10205,
+        "placed": 0
+      },
+      {
+        "seed": 10206,
+        "placed": 0
+      },
+      {
+        "seed": 10207,
+        "placed": 0
+      },
+      {
+        "seed": 10208,
+        "placed": 0
+      },
+      {
+        "seed": 10209,
+        "placed": 0
+      },
+      {
+        "seed": 10210,
+        "placed": 0
+      },
+      {
+        "seed": 10211,
+        "placed": 0
+      },
+      {
+        "seed": 10212,
+        "placed": 0
+      },
+      {
+        "seed": 10213,
+        "placed": 0
+      },
+      {
+        "seed": 10214,
+        "placed": 0
+      },
+      {
+        "seed": 10215,
+        "placed": 0
+      },
+      {
+        "seed": 10216,
+        "placed": 0
+      },
+      {
+        "seed": 10217,
+        "placed": 0
+      },
+      {
+        "seed": 10218,
+        "placed": 0
+      },
+      {
+        "seed": 10219,
+        "placed": 0
+      },
+      {
+        "seed": 10220,
+        "placed": 0
+      },
+      {
+        "seed": 10221,
+        "placed": 0
+      },
+      {
+        "seed": 10222,
+        "placed": 0
+      },
+      {
+        "seed": 10223,
+        "placed": 0
+      },
+      {
+        "seed": 10224,
+        "placed": 0
+      },
+      {
+        "seed": 10225,
+        "placed": 0
+      },
+      {
+        "seed": 10226,
+        "placed": 0
+      },
+      {
+        "seed": 10227,
+        "placed": 0
+      },
+      {
+        "seed": 10228,
+        "placed": 0
+      },
+      {
+        "seed": 10229,
+        "placed": 0
+      },
+      {
+        "seed": 10230,
+        "placed": 0
+      },
+      {
+        "seed": 10231,
+        "placed": 0
+      },
+      {
+        "seed": 10232,
+        "placed": 0
+      },
+      {
+        "seed": 10233,
+        "placed": 0
+      },
+      {
+        "seed": 10234,
+        "placed": 0
+      },
+      {
+        "seed": 10235,
+        "placed": 0
+      },
+      {
+        "seed": 10236,
+        "placed": 0
+      },
+      {
+        "seed": 10237,
+        "placed": 0
+      },
+      {
+        "seed": 10238,
+        "placed": 0
+      },
+      {
+        "seed": 10239,
+        "placed": 0
+      },
+      {
+        "seed": 10240,
+        "placed": 0
+      },
+      {
+        "seed": 10241,
+        "placed": 0
+      },
+      {
+        "seed": 10242,
+        "placed": 0
+      },
+      {
+        "seed": 10243,
+        "placed": 0
+      },
+      {
+        "seed": 10244,
+        "placed": 0
+      },
+      {
+        "seed": 10245,
+        "placed": 0
+      },
+      {
+        "seed": 10246,
+        "placed": 0
+      },
+      {
+        "seed": 10247,
+        "placed": 0
+      },
+      {
+        "seed": 10248,
+        "placed": 0
+      },
+      {
+        "seed": 10249,
+        "placed": 0
+      },
+      {
+        "seed": 10250,
+        "placed": 0
+      },
+      {
+        "seed": 10251,
+        "placed": 0
+      },
+      {
+        "seed": 10252,
+        "placed": 0
+      },
+      {
+        "seed": 10253,
+        "placed": 0
+      },
+      {
+        "seed": 10254,
+        "placed": 0
+      },
+      {
+        "seed": 10255,
+        "placed": 0
+      },
+      {
+        "seed": 10256,
+        "placed": 0
+      },
+      {
+        "seed": 10257,
+        "placed": 0
+      },
+      {
+        "seed": 10258,
+        "placed": 0
+      },
+      {
+        "seed": 10259,
+        "placed": 0
+      },
+      {
+        "seed": 10260,
+        "placed": 0
+      },
+      {
+        "seed": 10261,
+        "placed": 0
+      },
+      {
+        "seed": 10262,
+        "placed": 0
+      },
+      {
+        "seed": 10263,
+        "placed": 0
+      },
+      {
+        "seed": 10264,
+        "placed": 0
+      },
+      {
+        "seed": 10265,
+        "placed": 0
+      },
+      {
+        "seed": 10266,
+        "placed": 0
+      },
+      {
+        "seed": 10267,
+        "placed": 0
+      },
+      {
+        "seed": 10268,
+        "placed": 0
+      },
+      {
+        "seed": 10269,
+        "placed": 0
+      },
+      {
+        "seed": 10270,
+        "placed": 0
+      },
+      {
+        "seed": 10271,
+        "placed": 0
+      },
+      {
+        "seed": 10272,
+        "placed": 0
+      },
+      {
+        "seed": 10273,
+        "placed": 0
+      },
+      {
+        "seed": 10274,
+        "placed": 0
+      },
+      {
+        "seed": 10275,
+        "placed": 0
+      },
+      {
+        "seed": 10276,
+        "placed": 0
+      },
+      {
+        "seed": 10277,
+        "placed": 0
+      },
+      {
+        "seed": 10278,
+        "placed": 0
+      },
+      {
+        "seed": 10279,
+        "placed": 0
+      },
+      {
+        "seed": 10280,
+        "placed": 0
+      },
+      {
+        "seed": 10281,
+        "placed": 0
+      },
+      {
+        "seed": 10282,
+        "placed": 0
+      },
+      {
+        "seed": 10283,
+        "placed": 0
+      },
+      {
+        "seed": 10284,
+        "placed": 0
+      },
+      {
+        "seed": 10285,
+        "placed": 0
+      },
+      {
+        "seed": 10286,
+        "placed": 0
+      },
+      {
+        "seed": 10287,
+        "placed": 0
+      },
+      {
+        "seed": 10288,
+        "placed": 0
+      },
+      {
+        "seed": 10289,
+        "placed": 0
+      },
+      {
+        "seed": 10290,
+        "placed": 0
+      },
+      {
+        "seed": 10291,
+        "placed": 0
+      },
+      {
+        "seed": 10292,
+        "placed": 0
+      },
+      {
+        "seed": 10293,
+        "placed": 0
+      },
+      {
+        "seed": 10294,
+        "placed": 0
+      },
+      {
+        "seed": 10295,
+        "placed": 0
+      },
+      {
+        "seed": 10296,
+        "placed": 0
+      },
+      {
+        "seed": 10297,
+        "placed": 0
+      },
+      {
+        "seed": 10298,
+        "placed": 0
+      },
+      {
+        "seed": 10299,
+        "placed": 0
+      }
+    ]
+  }
+]

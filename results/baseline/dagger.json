@@ -1,0 +1,75 @@
+{
+  "candidates": [
+    {
+      "name": "BC（DAgger なし）",
+      "ckpt": "policy_bc.pt",
+      "val_full": 0.97,
+      "val_cube": 0.99,
+      "test_full": 0.9766666666666667,
+      "test_cube": 0.99,
+      "test_failed": [
+        {
+          "seed": 10007,
+          "placed": 2
+        },
+        {
+          "seed": 10132,
+          "placed": 2
+        },
+        {
+          "seed": 10183,
+          "placed": 2
+        },
+        {
+          "seed": 10198,
+          "placed": 2
+        },
+        {
+          "seed": 10231,
+          "placed": 1
+        },
+        {
+          "seed": 10233,
+          "placed": 1
+        },
+        {
+          "seed": 10255,
+          "placed": 2
+        }
+      ]
+    },
+    {
+      "name": "DAgger 1 回",
+      "ckpt": "policy_dagger1.pt",
+      "rollout_success": 0.955,
+      "labeled_samples": 56312,
+      "val_full": 0.99,
+      "val_cube": 0.9966666666666667,
+      "test_full": 0.9966666666666667,
+      "test_cube": 0.9988888888888889,
+      "test_failed": [
+        {
+          "seed": 10233,
+          "placed": 2
+        }
+      ]
+    },
+    {
+      "name": "DAgger 2 回",
+      "ckpt": "policy_dagger2.pt",
+      "rollout_success": 0.995,
+      "labeled_samples": 50579,
+      "val_full": 1.0,
+      "val_cube": 1.0,
+      "test_full": 0.9966666666666667,
+      "test_cube": 0.9988888888888889,
+      "test_failed": [
+        {
+          "seed": 10116,
+          "placed": 2
+        }
+      ]
+    }
+  ],
+  "selected": "policy_dagger2.pt"
+}

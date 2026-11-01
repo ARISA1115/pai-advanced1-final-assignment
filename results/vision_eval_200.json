@@ -1,0 +1,193 @@
+{
+ "episodes": 200,
+ "state_success": 0.995,
+ "state_cube_success": 0.9980588235294118,
+ "state_failed": [
+  {
+   "seed": 10104,
+   "placed": 2,
+   "active": 3
+  }
+ ],
+ "vision_success": 0.835,
+ "vision_cube_success": 0.8974678507766742,
+ "vision_failed": [
+  {
+   "seed": 10024,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 10048,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10054,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10090,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10120,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10043,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10055,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10151,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10014,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10032,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 10044,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10080,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 10092,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10116,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10170,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10188,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10015,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10069,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10075,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10081,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10111,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10117,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10141,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10147,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10153,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10159,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10016,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10040,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 10023,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10041,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 10059,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10107,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 10137,
+   "placed": 2,
+   "active": 3
+  }
+ ],
+ "median_mm_xy": 0.9142723347290022,
+ "median_mm": [
+  1.2444207690641695,
+  0.5841239003938348,
+  0.2468388838815401
+ ],
+ "p95_mm": [
+  10.020669849291064,
+  30.065612324820524,
+  8.154538047551437
+ ],
+ "note": "推定誤差は、閉ループ中の全フレーム（アームが隠す場面を含む）での、キューブ 3 個分の絶対誤差"
+}
