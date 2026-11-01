@@ -1,0 +1,2 @@
+# 自然言語の指示の解釈だけに使う（別の仮想環境 .venv-llm を勧める）。Apple Silicon 専用の MLX を使う。
+mlx-lm

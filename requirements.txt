@@ -1,0 +1,10 @@
+# 動作確認した版（Python 3.12.16、macOS / Apple Silicon、CPU のみ）
+mujoco==3.17.0
+numpy==2.5.4
+torch==2.15.0
+imageio==2.38.1
+imageio-ffmpeg==0.7.0
+pillow==11.3.0
+matplotlib==3.11.2
+pytest==9.2.0
+scipy==1.18.1
