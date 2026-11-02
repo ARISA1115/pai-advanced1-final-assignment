@@ -82,3 +82,18 @@ def test_front_localizer_and_tracker():
     policy = load_policy(str(ROOT / "checkpoints" / "policy_random.pt"))
     for _ in range(5):                       # 画像から作った観測で、数ステップ動かせる
         env.step(policy.act(env.obs(tr.update())))
+
+
+def test_visuomotor_policy_shapes_and_planner():
+    """視覚運動方策: 画像と状態から、4 次元の動作が出る。順番を進める部分（グリッパーの動きだけ）が動く。"""
+    import torch
+    from sorting.visuomotor import FrontCam, Planner, VisuoPolicy, VisuoPolicyFiLM, proprio_vec
+    env = SortEnv(0, task="random"); env.fixed_order = True; env.reset(10001)
+    cam = FrontCam(env); planner = Planner(env)
+    img = cam.frame(); vec = proprio_vec(env, planner.target)
+    assert img.shape == (3, 96, 96) and img.dtype == np.uint8 and vec.shape == (10,)
+    for cls in (VisuoPolicy, VisuoPolicyFiLM):
+        m = cls().eval()
+        a = m.act(img, vec)
+        assert a.shape == (4,) and np.all(np.isfinite(a)) and abs(a[3]) == 1.0
+    assert planner.target in range(3)
