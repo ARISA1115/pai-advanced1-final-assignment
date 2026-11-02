@@ -12,7 +12,8 @@ import _path  # noqa: F401
 from _path import ROOT
 from sorting.env import SortEnv
 from sorting.instruction import InstructionError, describe, to_task
-from sorting.visuomotor import FrontCam, Planner, load_visuo, proprio_vec
+from sorting.vision import FrontLocalizer, make_progress_checker
+from sorting.visuomotor import FrontCam, Planner, Unstick, load_visuo, proprio_vec
 
 
 def main():
@@ -20,7 +21,7 @@ def main():
     ap.add_argument("--policy", required=True)
     ap.add_argument("--parsed", default=str(ROOT / "results" / "instruction_eval.json"))
     ap.add_argument("--seeds-per", type=int, default=3)
-    ap.add_argument("--max-steps", type=int, default=700)
+    ap.add_argument("--max-steps", type=int, default=800)
     ap.add_argument("--shard", default="0/1")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
@@ -28,7 +29,8 @@ def main():
     rows = json.load(open(a.parsed))["rows"][k::n]
     pol = load_visuo(a.policy)
     env = SortEnv(0, task="random"); env.fixed_order = True
-    cam = FrontCam(env, pol.res, pol.cams); planner = Planner(env)
+    cam = FrontCam(env, pol.res, pol.cams); loc = FrontLocalizer(env)
+    planner = Planner(env, strict=True, progress_checker=make_progress_checker(env, loc))   # 評価（vm_eval.py の最終設定）と同じ
     out = []
     for r in rows:
         if r["category"] == "invalid":                      # 実行できない指示: 検査で拒否できたら、動かさない
@@ -38,10 +40,10 @@ def main():
         goal, active = to_task(r["output"])
         oks = []
         for s in range(a.seeds_per):
-            env.reset(70000 + r["id"] * 10 + s, goal=goal, active=active); planner.reset()
+            env.reset(70000 + r["id"] * 10 + s, goal=goal, active=active); planner.reset(); un = Unstick(env, seed=70000 + r["id"] * 10 + s)
             for _ in range(a.max_steps):
                 tgt = planner.update()
-                _, ok = env.step(pol.act(cam.frame(), proprio_vec(env, tgt)))
+                _, ok = env.step(un.filter(pol.act(cam.frame(), proprio_vec(env, tgt))))
                 if ok:
                     break
             oks.append(env.success())

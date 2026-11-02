@@ -97,3 +97,15 @@ def test_visuomotor_policy_shapes_and_planner():
         a = m.act(img, vec)
         assert a.shape == (4,) and np.all(np.isfinite(a)) and abs(a[3]) == 1.0
     assert planner.target in range(3)
+
+
+def test_unstick_moves_only_when_stalled():
+    import numpy as np
+    from sorting.env import SortEnv
+    from sorting.visuomotor import Unstick
+    env = SortEnv(0, task="random"); env.reset(0)
+    un = Unstick(env, window=5, span=0.008, steps=3, seed=0)
+    a = np.array([0.0, 0.0, 0.0, -1.0])
+    out = [un.filter(a) for _ in range(5)]                    # 手先を動かさないと、5 ステップ目に動かし始める
+    assert np.allclose(out[0], a) and not np.allclose(out[4][:3], 0)
+    assert out[4][3] == -1.0 and un.count == 1                # 握る・開くは、方策の出力のまま
