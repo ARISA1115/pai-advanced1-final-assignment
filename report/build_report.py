@@ -45,6 +45,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--account", required=True)
     ap.add_argument("--video-url", default="（提出時に記載）")
+    ap.add_argument("--with-vm", action="store_true", help="追加実験（画像を入力にした方策）を、報告書に入れる")
     ap.add_argument("--no-ai-note", action="store_true", help="生成 AI を使った旨の一文を入れない")
     args = ap.parse_args()
 
@@ -109,6 +110,39 @@ def main():
     cat_rows = [[CATJ[c], f"{ie['by_category'][c]['correct']}/{ie['by_category'][c]['n']}", f"{iz['by_category'][c]['correct']}/{iz['by_category'][c]['n']}"] for c in CATJ]
 
     heading_ai = "" if args.no_ai_note else "・生成 AI の利用"
+    vm_html = ""
+    if args.with_vm:
+        import os
+        def jv(name):
+            f = R / name
+            return json.load(open(f)) if f.exists() else None
+        # 推移の表: 失敗した最初の試行から、最終の方策まで。結果ファイルがあるものだけを載せる
+        steps = [
+            ("1 回目（CPU、6 エポック、約 8 万サンプル）", "従来型 CNN", jv("vm_eval_bc.json")),
+            ("2 回目（GPU、30 エポック、同じデータ）", "従来型 CNN", jv("vm_eval_base30.json")),
+            ("3 回目（60 エポック、データ 2 倍）", "従来型 CNN", jv("vm_eval_base60.json")),
+            ("4 回目（DAgger 1 回、約 29 万サンプル）", "従来型 CNN", jv("vm_eval_dagger2.json")),
+            ("5 回目（DAgger 2 回、約 40 万サンプル）", "従来型 CNN", jv("vm_eval_dagger3.json")),
+            ("v2（事前学習 ResNet18、2 視点、8 ステップの系列）", "ResNet18", jv("vm2_eval_bc.json")),
+            ("v2 + DAgger", "ResNet18", jv("vm2_eval_dagger.json")),
+        ]
+        rows = [[a, b, pct(c["success"]), pct(c["cube_success"])] for a, b, c in steps if c]
+        best = max((c for _, _, c in steps if c), key=lambda c: c["success"])
+        bs = best["success"]
+        base_vis = vis["vision_success"]
+        if bs >= base_vis:
+            concl = f"画像を直接入力にした方策は、最良で {pct(bs)} に達し、位置推定を挟む方式（{pct(base_vis)}）を上回った。"
+        elif bs >= 0.5:
+            concl = f"画像を直接入力にした方策は、最良で {pct(bs)} に達し、基準の 50% を超えたが、位置推定を挟む方式（{pct(base_vis)}）には届かなかった。"
+        else:
+            concl = f"画像を直接入力にした方策は、最良でも {pct(bs)} にとどまった。"
+        vm_html = f"""
+<h3>6.3 追加実験: 画像を直接入力にした方策（視覚運動方策）</h3>
+<p>ここまでの方策は、状態ベクトル（キューブの位置を含む）を入力にしていた。この追加実験では、<b>カメラ画像から、直接、手先の動作を出す方策</b>を作った。入力は、画像と、ロボット自身の手先・グリッパー、今のタスク（運ぶキューブの色と置き場所）だけで、<b>キューブの位置は、入力に含めない</b>。運ぶ順番は、色の番号の順に固定し、次へ進める合図は、グリッパーの動き（つかんで、開いた）だけで決める。正解は、キューブの真の位置を見るエキスパート（学習時だけ使う特権情報）。評価は、学習に使っていない種 10000〜の 200 エピソード。</p>
+<p>最初の試行は、<b>0%</b> だった。同じデータ・同じ構造で、学習のエポックを 6 から 30 に増やすと、検証損失が 0.135 から 0.049 に、成功率が 0% から 15.5% になった（エポック不足が、主な要因と見られる。乱数の影響は、確かめていない）。その後、データを増やし、学習した方策で動かして正解を付け直す DAgger を重ね、構造も改善した。</p>
+{table(["方策（実験の順）", "構造", "3 個とも成功", "個数ベース"], rows)}
+<p class="cap">表 5　<b>→ 結論: {concl}</b>先行研究（R3M: 事前学習した視覚表現が、ゼロからの学習より、シミュレーションの 12 タスクで 20% 以上向上、ACT: 行動の系列を出す方策、DAgger: 方策が到達した状態での再学習）の考え方を、構造と学習に取り入れた（概要の記述に基づく。効果は、この課題で、実測した値のみを報告している）。</p>
+"""
     ai_note = "" if args.no_ai_note else "<li>コードと本資料の作成に、生成 AI（Claude Code）を使った。設計・実験条件・結果の数値は、実行ログ（results/*.json）から取っている。</li>"
 
     body = f"""
@@ -190,6 +224,7 @@ def main():
 <p><b>残る失敗（{len(vis['vision_failed'])} / {vis['episodes']} 件）</b>は、動かす 3 個のうち 1〜2 個を置いたところで止まったものが大半（{sum(1 for f in vis['vision_failed'] if f['active']==3 and f['placed'] in (1,2))} 件）。種 10200 以降の失敗の先頭 48 件を再実行して調べたところ、<b>48 件すべてで、キューブがグリッパーから外れて落ちて</b>（グリッパーが 0.2 未満まで閉じて）いた。持っているキューブは、手とハンドに隠れて、カメラで見えない（面積が初期の 30% 未満の場面が過半）ため、画像では、滑りを修正できなかった。</p>
 <p><b>この評価の公平さについて</b>: 追跡の改良（持ち上げ中の z の補正、落下の検出、再検出の抑制）は、最終評価の種のうち 10000〜10199 の失敗を調べて行った。そのため、改良に使っていない種 10200〜10999（800 エピソード）での成功率を併記する: <b>{pct(unseen_rate)}</b>（改良に使った 200 エピソードでは {pct(dev_rate)}）。差はなく、改良による成績の水増しは、みられない。</p>
 
+{vm_html}
 <h2>7. 工夫した点</h2>
 <ul>
 <li><b>LLM の出力を信用しない設計</b>: 検査を通ったものだけを実行する。実行できない指示 10 件は、LLM のみでは 8 件、検査込みでは 10 件が拒否でき、誤って動いたものは 0 件だった。</li>
