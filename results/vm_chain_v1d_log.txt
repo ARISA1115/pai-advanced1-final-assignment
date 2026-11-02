@@ -1,0 +1,21 @@
+開始 06:34:45
+方策で動かした収集の完了 06:47:25
+エキスパートの収集の完了 06:53:21
+拡散モデルの学習を一時停止した（pid ��06:53:21
+files 40 samples 453720 train 431034 val 22686
+epoch 1 train 0.0801 val 0.0578 (261s)
+epoch 2 train 0.0537 val 0.0473 (633s)
+epoch 3 train 0.0465 val 0.0441 (1177s)
+epoch 4 train 0.0422 val 0.0400 (1708s)
+epoch 5 train 0.0388 val 0.0372 (2212s)
+epoch 6 train 0.0361 val 0.0346 (2704s)
+epoch 7 train 0.0335 val 0.0330 (3148s)
+epoch 8 train 0.0313 val 0.0317 (3518s)
+epoch 9 train 0.0299 val 0.0308 (3825s)
+epoch 10 train 0.0290 val 0.0307 (4178s)
+saved vm_dagger5.pt
+scripts/vm_chain_v1d.sh: line 16: kill: (67615) - No such process
+学習完了 08:03:18
+dagger5 + 止まったら動かす（種 800000〜）: 200 エピソード、3 個とも成功 0.790（158/200）、個数ベース 0.867
+失敗の内訳（動かす数, 置けた数）: [((1, 0), 6), ((2, 0), 4), ((2, 1), 16), ((3, 0), 5), ((3, 1), 5), ((3, 2), 6)]
+全部完了 08:09:27

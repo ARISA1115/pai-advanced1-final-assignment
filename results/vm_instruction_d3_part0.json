@@ -1,0 +1,149 @@
+[
+ {
+  "id": 1,
+  "category": "single",
+  "text": "赤いキューブを青の置き場所に置いて",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 4,
+  "category": "single",
+  "text": "赤を緑のところに移して",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 7,
+  "category": "single",
+  "text": "赤だけ青の置き場所へ動かして。他は触らないで",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 10,
+  "category": "single",
+  "text": "緑を緑の置き場所へ",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 13,
+  "category": "swap",
+  "text": "赤と青を入れ替えて",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 16,
+  "category": "swap",
+  "text": "青と赤をスワップ",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 19,
+  "category": "swap",
+  "text": "赤と青を入れ替えて、緑は動かさないで",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 22,
+  "category": "multi",
+  "text": "青を赤へ、赤を緑へ、緑を青へ",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 25,
+  "category": "multi",
+  "text": "全部ひとつずつずらして：赤は緑、緑は青、青は赤",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 28,
+  "category": "multi",
+  "text": "Put red on the blue pad and blue on the green pad.",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 31,
+  "category": "multi",
+  "text": "赤は青へ、青は赤へ、緑はそのままで",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 34,
+  "category": "sort",
+  "text": "全部同じ色の置き場所に置いて",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 37,
+  "category": "sort",
+  "text": "それぞれのキューブを同じ色の置き場所へ",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 40,
+  "category": "sort",
+  "text": "色ごとに分けてください",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 43,
+  "category": "exclude",
+  "text": "青以外をそれぞれ同じ色の置き場所へ",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 46,
+  "category": "exclude",
+  "text": "赤だけ色の通りに",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 49,
+  "category": "casual",
+  "text": "青を赤のところへ。お願いします。",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 52,
+  "category": "casual",
+  "text": "Please place the blue cube on the red pad.",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 55,
+  "category": "invalid",
+  "text": "赤を白い置き場所へ",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 58,
+  "category": "invalid",
+  "text": "こんにちは",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 61,
+  "category": "invalid",
+  "text": "赤を宙に浮かせて",
+  "executed": 0,
+  "success": 1.0
+ }
+]

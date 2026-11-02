@@ -1,0 +1,1 @@
+{"episodes": 25, "success": 0.72, "placed": 42, "active": 54, "failed": [{"seed": 800013, "placed": 1, "active": 2}, {"seed": 800021, "placed": 0, "active": 3}, {"seed": 800053, "placed": 1, "active": 3}, {"seed": 800093, "placed": 1, "active": 3}, {"seed": 800101, "placed": 1, "active": 2}, {"seed": 800117, "placed": 0, "active": 2}, {"seed": 800157, "placed": 1, "active": 2}]}

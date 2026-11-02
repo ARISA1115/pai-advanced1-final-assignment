@@ -1,0 +1,436 @@
+[
+ {
+  "id": 1,
+  "category": "single",
+  "text": "赤いキューブを青の置き場所に置いて",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 2,
+  "category": "single",
+  "text": "緑のキューブを赤の場所へ運んで",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 3,
+  "category": "single",
+  "text": "青を緑の置き場所へ",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 4,
+  "category": "single",
+  "text": "赤を緑のところに移して",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 5,
+  "category": "single",
+  "text": "青いブロックを赤い台に載せて",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 6,
+  "category": "single",
+  "text": "緑のやつを青のとこへ",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 7,
+  "category": "single",
+  "text": "赤だけ青の置き場所へ動かして。他は触らないで",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 8,
+  "category": "single",
+  "text": "Move the red cube to the green pad.",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 9,
+  "category": "single",
+  "text": "青のキューブを青の置き場所に置いて",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 10,
+  "category": "single",
+  "text": "緑を緑の置き場所へ",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 11,
+  "category": "single",
+  "text": "赤を赤の場所へ戻して",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 12,
+  "category": "single",
+  "text": "まず赤を青の置き場所へお願い",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 13,
+  "category": "swap",
+  "text": "赤と青を入れ替えて",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 14,
+  "category": "swap",
+  "text": "赤と緑の位置を交換して",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 15,
+  "category": "swap",
+  "text": "緑と青を入れ替えてください",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 16,
+  "category": "swap",
+  "text": "青と赤をスワップ",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 17,
+  "category": "swap",
+  "text": "赤のキューブと緑のキューブの置き場所を入れ替える",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 18,
+  "category": "swap",
+  "text": "swap the green and blue cubes",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 19,
+  "category": "swap",
+  "text": "赤と青を入れ替えて、緑は動かさないで",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 20,
+  "category": "swap",
+  "text": "緑と赤をお互いの場所へ",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 21,
+  "category": "multi",
+  "text": "赤を青の置き場所へ、緑を赤の置き場所へ",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 22,
+  "category": "multi",
+  "text": "青を赤へ、赤を緑へ、緑を青へ",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 23,
+  "category": "multi",
+  "text": "赤を緑の場所へ、青を赤の場所へ運んで",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 24,
+  "category": "multi",
+  "text": "緑は青の置き場所、青は緑の置き場所",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 25,
+  "category": "multi",
+  "text": "全部ひとつずつずらして：赤は緑、緑は青、青は赤",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 26,
+  "category": "multi",
+  "text": "赤→青、緑→赤 の順に置いて",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 27,
+  "category": "multi",
+  "text": "青を緑へ、緑を赤へ運んで。赤は触らない",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 28,
+  "category": "multi",
+  "text": "Put red on the blue pad and blue on the green pad.",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 29,
+  "category": "multi",
+  "text": "赤を青の置き場所に、それから緑を赤の置き場所に",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 30,
+  "category": "multi",
+  "text": "3つとも隣の色の場所に回して（赤→緑→青→赤）",
+  "executed": 0,
+  "success": 0.0
+ },
+ {
+  "id": 31,
+  "category": "multi",
+  "text": "赤は青へ、青は赤へ、緑はそのままで",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 32,
+  "category": "multi",
+  "text": "緑と青を、それぞれ赤と緑の置き場所へ",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 33,
+  "category": "sort",
+  "text": "色ごとに仕分けて",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 34,
+  "category": "sort",
+  "text": "全部同じ色の置き場所に置いて",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 35,
+  "category": "sort",
+  "text": "キューブを色別に片付けて",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 36,
+  "category": "sort",
+  "text": "Sort the cubes by color.",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 37,
+  "category": "sort",
+  "text": "それぞれのキューブを同じ色の置き場所へ",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 38,
+  "category": "sort",
+  "text": "色を揃えて並べて",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 39,
+  "category": "sort",
+  "text": "全て元の色の置き場所に戻して",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 40,
+  "category": "sort",
+  "text": "色ごとに分けてください",
+  "executed": 3,
+  "success": 0.0
+ },
+ {
+  "id": 41,
+  "category": "exclude",
+  "text": "緑以外を色ごとの置き場所に置いて",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 42,
+  "category": "exclude",
+  "text": "赤以外は同じ色の場所に",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 43,
+  "category": "exclude",
+  "text": "青以外をそれぞれ同じ色の置き場所へ",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 44,
+  "category": "exclude",
+  "text": "赤と緑だけ色ごとに仕分けて",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 45,
+  "category": "exclude",
+  "text": "青と緑を色別に",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 46,
+  "category": "exclude",
+  "text": "赤だけ色の通りに",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 47,
+  "category": "casual",
+  "text": "赤いのを青いほうに持っていって",
+  "executed": 0,
+  "success": 0.0
+ },
+ {
+  "id": 48,
+  "category": "casual",
+  "text": "ちょっと緑のキューブを赤の場所に動かしてくれる？",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 49,
+  "category": "casual",
+  "text": "青を赤のところへ。お願いします。",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 50,
+  "category": "casual",
+  "text": "赤、青のとこね",
+  "executed": 0,
+  "success": 0.0
+ },
+ {
+  "id": 51,
+  "category": "casual",
+  "text": "緑 → 青",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 52,
+  "category": "casual",
+  "text": "Please place the blue cube on the red pad.",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 53,
+  "category": "invalid",
+  "text": "赤と緑を両方とも青の置き場所へ",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 54,
+  "category": "invalid",
+  "text": "黄色のキューブを赤の場所へ",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 55,
+  "category": "invalid",
+  "text": "赤を白い置き場所へ",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 56,
+  "category": "invalid",
+  "text": "キューブを全部ゴミ箱に捨てて",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 57,
+  "category": "invalid",
+  "text": "赤を青の置き場所へ、緑も青の置き場所へ",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 58,
+  "category": "invalid",
+  "text": "こんにちは",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 59,
+  "category": "invalid",
+  "text": "赤を青にも緑にも置いて",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 60,
+  "category": "invalid",
+  "text": "青のキューブをテーブルの外に出して",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 61,
+  "category": "invalid",
+  "text": "赤を宙に浮かせて",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 62,
+  "category": "invalid",
+  "text": "3 つとも赤の置き場所へ",
+  "executed": 0,
+  "success": 1.0
+ }
+]

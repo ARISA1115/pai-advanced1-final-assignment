@@ -1,0 +1,142 @@
+[
+ {
+  "id": 3,
+  "category": "single",
+  "text": "青を緑の置き場所へ",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 6,
+  "category": "single",
+  "text": "緑のやつを青のとこへ",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 9,
+  "category": "single",
+  "text": "青のキューブを青の置き場所に置いて",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 12,
+  "category": "single",
+  "text": "まず赤を青の置き場所へお願い",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 15,
+  "category": "swap",
+  "text": "緑と青を入れ替えてください",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 18,
+  "category": "swap",
+  "text": "swap the green and blue cubes",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 21,
+  "category": "multi",
+  "text": "赤を青の置き場所へ、緑を赤の置き場所へ",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 24,
+  "category": "multi",
+  "text": "緑は青の置き場所、青は緑の置き場所",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 27,
+  "category": "multi",
+  "text": "青を緑へ、緑を赤へ運んで。赤は触らない",
+  "executed": 3,
+  "success": 0.3333333333333333
+ },
+ {
+  "id": 30,
+  "category": "multi",
+  "text": "3つとも隣の色の場所に回して（赤→緑→青→赤）",
+  "executed": 0,
+  "success": 0.0
+ },
+ {
+  "id": 33,
+  "category": "sort",
+  "text": "色ごとに仕分けて",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 36,
+  "category": "sort",
+  "text": "Sort the cubes by color.",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 39,
+  "category": "sort",
+  "text": "全て元の色の置き場所に戻して",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 42,
+  "category": "exclude",
+  "text": "赤以外は同じ色の場所に",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 45,
+  "category": "exclude",
+  "text": "青と緑を色別に",
+  "executed": 3,
+  "success": 0.6666666666666666
+ },
+ {
+  "id": 48,
+  "category": "casual",
+  "text": "ちょっと緑のキューブを赤の場所に動かしてくれる？",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 51,
+  "category": "casual",
+  "text": "緑 → 青",
+  "executed": 3,
+  "success": 1.0
+ },
+ {
+  "id": 54,
+  "category": "invalid",
+  "text": "黄色のキューブを赤の場所へ",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 57,
+  "category": "invalid",
+  "text": "赤を青の置き場所へ、緑も青の置き場所へ",
+  "executed": 0,
+  "success": 1.0
+ },
+ {
+  "id": 60,
+  "category": "invalid",
+  "text": "青のキューブをテーブルの外に出して",
+  "executed": 0,
+  "success": 1.0
+ }
+]
