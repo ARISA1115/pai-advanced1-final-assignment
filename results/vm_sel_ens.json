@@ -1,0 +1,343 @@
+{
+ "name": "vm_sel_ens",
+ "episodes": 200,
+ "success": 0.665,
+ "cube_success": 0.7930283224400871,
+ "failed": [
+  {
+   "seed": 800000,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800008,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800024,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800048,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800064,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800080,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800096,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800120,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800128,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800152,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800184,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800192,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800033,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800057,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800113,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800145,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800169,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800010,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800058,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800066,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800082,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800090,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800098,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800154,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800162,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800186,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800194,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800011,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800059,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800067,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800012,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800020,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800036,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800044,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800060,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800068,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800092,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800100,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800108,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800124,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800148,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800172,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800013,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800021,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800053,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800061,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800077,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800085,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800101,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800117,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800133,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800141,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800157,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800181,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800030,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800038,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800054,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800118,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800174,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800182,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800198,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800007,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800055,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800095,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800103,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800143,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800151,
+   "placed": 0,
+   "active": 1
+  }
+ ]
+}

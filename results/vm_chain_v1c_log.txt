@@ -1,0 +1,20 @@
+開始: 03:01:29
+収集完了: 03:09:32
+files 40 samples 498034 train 473133 val 24901
+epoch 1 train 0.0455 val 0.0400 (279s)
+epoch 2 train 0.0400 val 0.0390 (490s)
+epoch 3 train 0.0397 val 0.0409 (810s)
+epoch 4 train 0.0394 val 0.0376 (1059s)
+epoch 5 train 0.0379 val 0.0379 (1327s)
+epoch 6 train 0.0364 val 0.0368 (1593s)
+epoch 7 train 0.0347 val 0.0363 (1887s)
+epoch 8 train 0.0327 val 0.0337 (2143s)
+epoch 9 train 0.0310 val 0.0326 (2409s)
+epoch 10 train 0.0297 val 0.0318 (2826s)
+epoch 11 train 0.0286 val 0.0313 (3062s)
+epoch 12 train 0.0280 val 0.0312 (3287s)
+saved vm_dagger4.pt
+学習完了: 04:05:03
+dagger4 + 画像で順番を進める(新しい種 800000〜): 200 エピソード、3 個とも成功 0.665（133/200）、個数ベース 0.784
+失敗の内訳（動かす数, 置けた数）: [((1, 0), 17), ((2, 0), 11), ((2, 1), 14), ((3, 0), 6), ((3, 1), 9), ((3, 2), 10)]
+全部完了: 04:14:10

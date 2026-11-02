@@ -1,0 +1,343 @@
+{
+ "name": "vm_sel_d3_check",
+ "episodes": 200,
+ "success": 0.665,
+ "cube_success": 0.8104575163398693,
+ "failed": [
+  {
+   "seed": 800000,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800008,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800016,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800024,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800048,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800080,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800096,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800128,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800168,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800184,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800057,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800113,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800145,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800153,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800169,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800177,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800193,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800010,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800026,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800034,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800082,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800098,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800186,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800194,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800003,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800011,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800059,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800067,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800099,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800139,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800004,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800020,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800036,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800044,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800060,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800068,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800076,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800092,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800100,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800108,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800124,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800148,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800013,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800021,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800053,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 800061,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800077,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800085,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800101,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800117,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800141,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800157,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800189,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800197,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800022,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 800030,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800078,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800118,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800174,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800182,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800190,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800007,
+   "placed": 0,
+   "active": 2
+  },
+  {
+   "seed": 800103,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800135,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 800143,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 800151,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 800183,
+   "placed": 0,
+   "active": 1
+  }
+ ]
+}
