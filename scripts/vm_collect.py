@@ -21,6 +21,7 @@ def main():
     ap.add_argument("--cams", default="front", help="使うカメラ（カンマ区切り。例: front,top）")
     ap.add_argument("--res", type=int, default=96)
     ap.add_argument("--npy", action="store_true", help=".npz でなく、--out を接頭辞にして、_img.npy / _vec.npy / _y.npy に保存")
+    ap.add_argument("--first-target", default=None, help="最初に運ぶキューブの色がこの中にあるエピソードだけを集める（例: 1,2）")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     k, n = map(int, a.shard.split("/"))
@@ -33,6 +34,8 @@ def main():
     ok_n, t0 = 0, time.time()
     for j, s in enumerate(seeds):
         env.reset(s); planner.reset()
+        if a.first_target is not None and int(np.flatnonzero(env.active)[0]) not in {int(c) for c in a.first_target.split(",")}:
+            continue
         rng = np.random.default_rng(s)
         sigma = [0.0, 0.004, 0.008][j % 3]
         for step in range(a.max_steps):

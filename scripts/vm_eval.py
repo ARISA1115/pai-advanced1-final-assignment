@@ -7,7 +7,7 @@ import numpy as np
 import _path  # noqa: F401
 from _path import ROOT
 from sorting.env import SortEnv
-from sorting.visuomotor import FrontCam, Planner, load_visuo, proprio_vec
+from sorting.visuomotor import Unstick, FrontCam, Planner, load_visuo, proprio_vec
 from sorting.vision import FrontLocalizer, make_progress_checker, make_visual_verifier
 
 
@@ -18,6 +18,7 @@ def main():
     ap.add_argument("--max-steps", type=int, default=600)
     ap.add_argument("--visual-progress", action="store_true", help="置いた直後に、画像で置き場所にあると分かったら、すぐに次へ進める")
     ap.add_argument("--visual-check", action="store_true", help="順番が終わったあと、画像で置けたかを確認し、置けていなければ、やり直す")
+    ap.add_argument("--unstick", action="store_true", help="手先が同じ場所で止まったら、少し動かしてから、方策に戻す")
     ap.add_argument("--strict-planner", action="store_true", help="改良した順番の進行（置き場所の真上で開いたときだけ進める）")
     ap.add_argument("--oracle-planner", action="store_true", help="診断用: 運ぶ順番を、真の情報（置けたかどうか）で進める。順番の進行が、成績の限界かを調べる"); ap.add_argument("--out", required=True)
     a = ap.parse_args()
@@ -30,12 +31,13 @@ def main():
     seeds = list(range(a.seed0, a.seed0 + a.episodes))[k::n]
     ok_n, placed, active, failed = 0, 0, 0, []
     for s in seeds:
-        env.reset(s); planner.reset(); getattr(pol, 'reset', lambda: None)()
+        env.reset(s); planner.reset(); getattr(pol, 'reset', lambda: None)(); un = Unstick(env, seed=s) if a.unstick else None
         for _ in range(a.max_steps):
             tgt = planner.update()
             if a.oracle_planner:
                 tgt = env.target_index()
-            _, ok = env.step(pol.act(cam.frame(), proprio_vec(env, tgt)))
+            act = pol.act(cam.frame(), proprio_vec(env, tgt))
+            _, ok = env.step(un.filter(act) if un else act)
             if ok:
                 break
         ok_n += int(env.success()); placed += env.n_placed(); active += env.n_active()
