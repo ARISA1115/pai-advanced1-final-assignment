@@ -45,6 +45,7 @@ class SortEnv:
         self.steps = 0
         self.goal = np.arange(N_CUBES)          # キューブ i の目標の置き場所
         self.active = np.ones(N_CUBES, bool)    # 動かすキューブ
+        self.fixed_order = False                # True なら、置いていないキューブを、番号の小さい順に取る（視覚運動方策の実験用）
         self.reset(seed)
 
     # ---- 幾何 -------------------------------------------------------
@@ -127,6 +128,8 @@ class SortEnv:
             pi = None if est is None else est[i]
             if self.placed(i, pi):
                 continue
+            if self.fixed_order:
+                return i
             dist = np.linalg.norm((self.cube_pos(i) if est is None else est[i]) - ee)
             if dist < bd:
                 best, bd = i, dist
