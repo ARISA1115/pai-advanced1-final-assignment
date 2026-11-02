@@ -170,10 +170,57 @@ def make_visuo(arch: str, in_ch: int = 3):
     return VisuoPolicyFiLM(in_ch=in_ch) if arch == "film" else VisuoPolicy(in_ch=in_ch)
 
 
+class Unstick:
+    """方策の出力が、同じ場所で止まったら（決定的な方策の、固定点）、少し動かしてから、方策に戻す。
+
+    使う情報は、手先の位置だけ（キューブの真の位置は使わない）。
+    window ステップの間、手先の動きが span [m] 未満なら、ランダムな水平方向 + 上向きへ、steps ステップ動かす。握る・開くは、方策の出力のまま。
+    """
+
+    def __init__(self, env, window: int = 30, span: float = 0.008, steps: int = 15, seed: int = 0):
+        self.env, self.window, self.span, self.steps = env, window, span, steps
+        self.rng = np.random.default_rng(seed); self.reset()
+
+    def reset(self):
+        self.hist, self.left, self.dir, self.count = [], 0, None, 0
+
+    def filter(self, a: np.ndarray) -> np.ndarray:
+        self.hist.append(self.env.tcp().copy())
+        if self.left > 0:
+            self.left -= 1
+            return np.array([*self.dir, a[3]])
+        if len(self.hist) >= self.window:
+            h = np.array(self.hist[-self.window:])
+            if np.ptp(h, axis=0).max() < self.span:
+                th = self.rng.uniform(0, 2 * np.pi)
+                self.dir = np.array([np.cos(th) * MAX_DELTA * 0.6, np.sin(th) * MAX_DELTA * 0.6, MAX_DELTA * 0.5])
+                self.left = self.steps; self.hist = []; self.count += 1
+                return np.array([*self.dir, a[3]])
+        return a
+
+
+class EnsemblePolicy:
+    """複数の方策の出力（握る・開くは、符号を付ける前の値）を平均する。入力の画像の形は、全員同じであること。"""
+
+    def __init__(self, models):
+        self.models = models; self.cams = models[0].cams; self.res = models[0].res
+
+    def reset(self):
+        pass
+
+    @torch.no_grad()
+    def act(self, img: np.ndarray, vec: np.ndarray) -> np.ndarray:
+        x, v = torch.as_tensor(img).unsqueeze(0), torch.as_tensor(vec).unsqueeze(0)
+        y = torch.stack([m.forward(x, v)[0] for m in self.models]).mean(0).numpy()
+        return np.array([y[0] * MAX_DELTA, y[1] * MAX_DELTA, y[2] * MAX_DELTA, 1.0 if y[3] > 0 else -1.0])
+
+
 def load_visuo(path: str):
+    if "+" in path:                                      # 「a.pt+b.pt+c.pt」は、方策の平均
+        return EnsemblePolicy([load_visuo(p) for p in path.split("+")])
     ck = torch.load(path, map_location="cpu", weights_only=True)
-    if ck.get("arch") == "diffusion":
-        m = VisuoDiffusion(n_views=ck["in_ch"] // 3)
+    if ck.get("arch") in ("diffusion", "diffusion_g"):
+        m = VisuoDiffusion(n_views=ck["in_ch"] // 3, grip_head=ck["arch"] == "diffusion_g")
     else:
         m = make_visuo(ck.get("arch", "base"), ck.get("in_ch", 3))
     m.load_state_dict(ck["state_dict"]); m.eval()
@@ -293,15 +340,20 @@ class _ResBlock(nn.Module):
 
 
 class VisuoDiffusion(VisuoResNet):
-    def __init__(self, n_views: int = 2, keypoints: int = 32, chunk: int = CHUNK, width: int = 512, blocks: int = 4):
+    def __init__(self, n_views: int = 2, keypoints: int = 32, chunk: int = CHUNK, width: int = 512, blocks: int = 4,
+                 grip_head: bool = False):
         super().__init__(n_views, keypoints, chunk)
         self.head = None
+        # grip_head: 握る・開くを、拡散で生成せず、観測から直接分類する（拡散は、手先の変位 3 次元だけ）
+        self.grip_head = grip_head; self.adim = 3 if grip_head else 4
+        if grip_head:
+            self.grip = nn.Sequential(nn.Linear(width, width), nn.GELU(), nn.Linear(width, chunk))
         od = n_views * keypoints * 2 + VEC_DIM
         self.obs_mlp = nn.Sequential(nn.Linear(od, width), nn.GELU(), nn.Linear(width, width))
         self.t_emb = nn.Sequential(nn.Linear(32, width), nn.GELU(), nn.Linear(width, width))
-        self.inp = nn.Linear(chunk * 4, width)
+        self.inp = nn.Linear(chunk * self.adim, width)
         self.blocks = nn.ModuleList([_ResBlock(width) for _ in range(blocks)])
-        self.out = nn.Sequential(nn.LayerNorm(width), nn.Linear(width, chunk * 4))
+        self.out = nn.Sequential(nn.LayerNorm(width), nn.Linear(width, chunk * self.adim))
         self.register_buffer("ab", _alpha_bar())
         self.queue: list = []
 
@@ -325,21 +377,27 @@ class VisuoDiffusion(VisuoResNet):
         x = self.inp(a_noisy.reshape(len(a_noisy), -1))
         for blk in self.blocks:
             x = blk(x, c)
-        return self.out(x).reshape(-1, self.chunk, 4)
+        return self.out(x).reshape(-1, self.chunk, self.adim)
 
     def loss(self, img, vec, y, m):
         """y: (B, chunk, 4)  [-1, 1]、m: (B, chunk) 有効な位置。加えたノイズの予測誤差（有効な位置だけ）。"""
         b = y.shape[0]
+        obs_c = self._obs(img, vec)
+        g = y[..., 3]; y = y[..., :self.adim]
         t = torch.randint(0, DIFF_T, (b,), device=y.device)
         e = torch.randn_like(y)
         ab = self.ab[t][:, None, None]
-        pred = self._eps(ab.sqrt() * y + (1 - ab).sqrt() * e, t, self._obs(img, vec))
-        return (((pred - e) ** 2).mean(-1) * m).sum() / m.sum()
+        pred = self._eps(ab.sqrt() * y + (1 - ab).sqrt() * e, t, obs_c)
+        loss = (((pred - e) ** 2).mean(-1) * m).sum() / m.sum()
+        if self.grip_head:
+            bce = nn.functional.binary_cross_entropy_with_logits(self.grip(obs_c), (g > 0).float(), reduction="none")
+            loss = loss + (bce * m).sum() / m.sum()
+        return loss
 
     @torch.no_grad()
     def sample(self, img: torch.Tensor, vec: torch.Tensor) -> torch.Tensor:
         obs_c = self._obs(img, vec); b = img.shape[0]
-        a = torch.randn(b, self.chunk, 4, device=img.device)
+        a = torch.randn(b, self.chunk, self.adim, device=img.device)
         ts = torch.linspace(DIFF_T - 1, 0, DIFF_SAMPLE).long()
         for j, t in enumerate(ts):
             tt = torch.full((b,), int(t), device=img.device)
@@ -347,7 +405,10 @@ class VisuoDiffusion(VisuoResNet):
             ab = self.ab[t]; abn = self.ab[ts[j + 1]] if j + 1 < len(ts) else torch.tensor(1.0)
             x0 = ((a - (1 - ab).sqrt() * e) / ab.sqrt()).clamp(-1, 1)
             a = abn.sqrt() * x0 + (1 - abn).sqrt() * e
-        return a.clamp(-1, 1)
+        a = a.clamp(-1, 1)
+        if self.grip_head:
+            a = torch.cat([a, torch.where(self.grip(obs_c) > 0, 1.0, -1.0)[..., None]], -1)
+        return a
 
     @torch.no_grad()
     def act(self, img: np.ndarray, vec: np.ndarray) -> np.ndarray:
