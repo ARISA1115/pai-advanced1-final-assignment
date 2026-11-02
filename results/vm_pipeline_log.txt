@@ -1,0 +1,16 @@
+== 1. BC の学習
+files 8 samples 81583 train 77504 val 4079
+epoch 1 train 0.2887 val 0.1937 (215s)
+epoch 2 train 0.1738 val 0.1617 (422s)
+epoch 3 train 0.1555 val 0.1483 (629s)
+epoch 4 train 0.1464 val 0.1414 (838s)
+epoch 5 train 0.1396 val 0.1372 (1044s)
+epoch 6 train 0.1358 val 0.1353 (1249s)
+saved vm_bc.pt
+== 2. BC の評価
+評価 bc: 200 エピソード、3 個とも成功 0.000、個数ベース 0.008
+== 3. DAgger の収集（学習した方策で動かし、エキスパートが正解を付ける）
+== 4. 再学習
+files 16 samples 225583 train 214304 val 11279
+epoch 1 train 0.1203 val 0.0807 (573s)
+epoch 2 train 0.0687 val 0.0614 (1146s)

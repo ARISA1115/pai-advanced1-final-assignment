@@ -1,0 +1,17 @@
+収集完了: 18:56:07
+v2 の完了を確認: 19:25:09
+files 32 samples 398201 train 378291 val 19910
+epoch 1 train 0.0599 val 0.0510 (319s)
+epoch 2 train 0.0474 val 0.0460 (637s)
+epoch 3 train 0.0441 val 0.0440 (956s)
+epoch 4 train 0.0424 val 0.0431 (1264s)
+epoch 5 train 0.0405 val 0.0405 (1398s)
+epoch 6 train 0.0386 val 0.0406 (1527s)
+epoch 7 train 0.0366 val 0.0383 (1657s)
+epoch 8 train 0.0346 val 0.0358 (1788s)
+epoch 9 train 0.0328 val 0.0348 (1920s)
+epoch 10 train 0.0313 val 0.0340 (2052s)
+epoch 11 train 0.0302 val 0.0331 (2184s)
+epoch 12 train 0.0298 val 0.0330 (2316s)
+saved vm_dagger3.pt
+学習完了: 20:04:05
