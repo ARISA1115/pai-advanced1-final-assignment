@@ -162,6 +162,18 @@ class FrontLocalizer:
             out.append(best)
         return out
 
+    def pad_area(self, k: int) -> int:
+        """色 k の、置き場所の領域（キューブが乗っていれば、その分を含む）の面積。見えなければ 0。"""
+        self.r.update_scene(self.env.d, camera=self.cam)
+        img = self.r.render().astype(np.float32)
+        lab, n = ndimage.label(COLOR_RULES[k](img[..., 0], img[..., 1], img[..., 2]))
+        best = 0
+        for j in range(1, n + 1):
+            ys, xs = np.nonzero(lab == j)
+            if len(xs) >= 5 and np.linalg.norm(np.array([xs.mean(), ys.mean()]) - self.pad_px[k]) < 0.035 * self.f:
+                best = max(best, len(xs))
+        return best
+
     def to_xy(self, u: float, v: float, z: float) -> np.ndarray:
         """画素の位置を、高さ z の面の (x, y) に戻し、校正（アフィン補正）をかける。"""
         return self.A @ self.backproject(u, v, z)[:2] + self.b
@@ -238,3 +250,50 @@ class Tracker:
                 if (i in self.lost or far) and self.est[i][2] < 0.05:
                     self.est[i][:2] = self.loc.to_xy(b[0], b[1], self.loc.plane_z)
         return self.est.copy()
+
+
+def make_visual_verifier(env, loc: "FrontLocalizer", tol: float = 0.04):
+    """画像から、「動かすキューブのうち、置き場所に置けていないもの」の番号の一覧を返す関数を作る。
+    置き場所から tol [m] 以上離れた所に、そのキューブの色の領域が、はっきり見えたときだけ「置けていない」とする。
+    見えない（腕に隠れている、自分の色の置き場所に重なっている）場合は、置けているものとして扱う。"""
+    def verify():
+        bl = loc.blobs()
+        missing = []
+        for i in range(3):
+            if not env.active[i] or bl[i] is None:
+                continue
+            xy = loc.to_xy(bl[i][0], bl[i][1], loc.plane_z)
+            if np.linalg.norm(xy - env.goal_xy(i)) > tol:
+                missing.append(i)
+        return missing
+    return verify
+
+
+class ProgressChecker:
+    """画像から、「そのキューブ（番号）が、置き場所にある」かを答える。順番を進める判定に使う（動作の制御には使わない）。
+
+    ・その色の領域が見えるとき: 置き場所から tol [m] 以内なら True。
+    ・自分の色の置き場所に置いたとき（領域が置き場所と重なる）: 置き場所の領域の面積が、空のとき（reset 時に記録）より、15% 以上大きければ True。
+      腕に隠れると、面積は減るだけなので、誤って True にはなりにくい。
+    """
+
+    def __init__(self, env, loc: "FrontLocalizer", tol: float = 0.04, grow: float = 1.15):
+        self.env, self.loc, self.tol, self.grow = env, loc, tol, grow
+        self.ref = [0, 0, 0]
+
+    def reset(self):
+        self.ref = [self.loc.pad_area(k) for k in range(3)]       # 空の置き場所の面積
+
+    def __call__(self, i: int) -> bool:
+        bl = self.loc.blobs()
+        if bl[i] is not None:
+            xy = self.loc.to_xy(bl[i][0], bl[i][1], self.loc.plane_z)
+            return bool(np.linalg.norm(xy - self.env.goal_xy(i)) < self.tol)
+        if self.env.goal[i] == i:
+            a = self.loc.pad_area(i)
+            return bool(self.ref[i] > 0 and a > self.grow * self.ref[i])
+        return False
+
+
+def make_progress_checker(env, loc: "FrontLocalizer", tol: float = 0.04):
+    return ProgressChecker(env, loc, tol)
