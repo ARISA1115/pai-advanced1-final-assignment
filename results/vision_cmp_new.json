@@ -1,0 +1,89 @@
+{
+ "name": "vision_cmp_new",
+ "episodes": 389,
+ "success": 0.9588688946015425,
+ "cube_success": 0.9787472035794184,
+ "failed": [
+  {
+   "seed": 830002,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830008,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830017,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830056,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830068,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830074,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830088,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830090,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830129,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830218,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830219,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 830256,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830282,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830289,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830329,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830339,
+   "placed": 1,
+   "active": 3
+  }
+ ],
+ "note": "時間の都合で 500 エピソードの途中で打ち切り。両方が終わった種だけで比較"
+}

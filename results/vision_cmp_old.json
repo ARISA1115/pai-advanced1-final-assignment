@@ -1,0 +1,254 @@
+{
+ "name": "vision_cmp_old",
+ "episodes": 389,
+ "success": 0.8740359897172236,
+ "cube_success": 0.9250559284116331,
+ "failed": [
+  {
+   "seed": 830002,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830008,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830009,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830021,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830026,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830030,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830035,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830038,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830056,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830057,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830069,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830074,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830078,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830083,
+   "placed": 0,
+   "active": 3
+  },
+  {
+   "seed": 830088,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830089,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830091,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830094,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830095,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830130,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830132,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830148,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830153,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830158,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830172,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830208,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 830211,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830214,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830219,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830221,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830243,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830255,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830258,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830276,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830282,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830289,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830312,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830321,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830323,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830325,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 830326,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830337,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830339,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830356,
+   "placed": 0,
+   "active": 1
+  },
+  {
+   "seed": 830359,
+   "placed": 1,
+   "active": 2
+  },
+  {
+   "seed": 830360,
+   "placed": 2,
+   "active": 3
+  },
+  {
+   "seed": 830363,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830367,
+   "placed": 1,
+   "active": 3
+  },
+  {
+   "seed": 830387,
+   "placed": 1,
+   "active": 3
+  }
+ ],
+ "note": "時間の都合で 500 エピソードの途中で打ち切り。両方が終わった種だけで比較"
+}
