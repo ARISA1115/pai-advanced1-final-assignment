@@ -201,8 +201,9 @@ class Tracker:
     - 離したら、その場に置かれたとみなす。
     """
 
-    def __init__(self, env, localizer: FrontLocalizer, fallback=None, redetect: bool = True):
+    def __init__(self, env, localizer: FrontLocalizer, fallback=None, redetect: bool = True, area_frac: float = 0.85):
         self.env, self.loc, self.fallback, self.redetect = env, localizer, fallback, redetect
+        self.area_frac = area_frac      # 領域の面積が、最初の面積のこの割合より小さければ（一部が隠れている）、位置を更新しない
         self.est = np.tile(np.array([0.4, 0.0, 0.02]), (3, 1)); self.holding = None; self.off = None
         self.area0 = np.full(3, np.nan); self.missing = 0
         self.lost = set()       # 落としたキューブ（カメラで探し直す）
@@ -244,7 +245,7 @@ class Tracker:
             bl = self.loc.blobs()
             for i in range(3):
                 b = bl[i]
-                if b is None or np.isnan(self.area0[i]) or b[2] < 0.6 * self.area0[i] or i == self.holding:
+                if b is None or np.isnan(self.area0[i]) or b[2] < self.area_frac * self.area0[i] or i == self.holding:
                     continue
                 far = np.linalg.norm(ee[:2] - self.est[i][:2]) > 0.08
                 if (i in self.lost or far) and self.est[i][2] < 0.05:

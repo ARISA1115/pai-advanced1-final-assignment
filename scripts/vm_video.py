@@ -81,7 +81,13 @@ def main():
     if a.instr:
         ins = json.load(open(a.instr)); ex = [x for x in ins if x["executed"] > 0]
         lines.append(f"日本語の指示から動作まで: 実行した {len(ex)} 件の平均 {np.mean([x['success'] for x in ex])*100:.1f}%")
-    lines += ["事前に決めた基準（3 個とも成功 50% 以上）を超えた", "位置を推定して動かす方式（87.4%）には、届いていない", "拡散モデルによる方策も試したが、この時間内では、これを超えなかった"]
+    track_line = "位置を推定して動かす方式（87.4%）には、届いていない"
+    try:
+        co = json.load(open(ROOT / "results" / "vision_cmp_old.json")); cn = json.load(open(ROOT / "results" / "vision_cmp_new.json"))
+        track_line = f"位置を推定して動かす方式も、追跡の改良で {cn['success']*100:.1f}%（同じ {cn['episodes']} エピソードで、従来は {co['success']*100:.1f}%）。画像だけの方策は、これに届いていない"
+    except FileNotFoundError:
+        pass
+    lines += ["事前に決めた基準（3 個とも成功 50% 以上）を超えた", track_line, "拡散モデルによる方策も試したが、この時間内では、これを超えなかった"]
     hold(frames, card(W, H, "追加の結果", lines, title_size=54, body_size=28), 10)
     print(f"追加分 {len(frames)/FPS:.1f} 秒", flush=True)
     rd = imageio.get_reader(a.base); n = 0
