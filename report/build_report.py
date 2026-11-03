@@ -169,7 +169,7 @@ def main():
     ai_note = "" if args.no_ai_note else "<li>コードと本資料の作成に、生成 AI（Claude Code）を使った。設計・実験条件・結果の数値は、実行ログ（results/*.json）から取っている。</li>"
 
     body = f"""
-<h1>日本語で指示できる、学習した AI のロボットアーム</h1>
+<h1>日本語の指示で動くピック＆プレース ― LLM による解釈と、画像からの模倣学習</h1>
 <p class="sub">Physical AI 応用編1 最終課題　説明資料</p>
 <div style="border:1.5px solid #4c78a8;padding:4pt 8pt;margin:6pt 0;">
 <b>2 回目の提出で追加した結果</b>（詳細は §6.2b、§6.3）
